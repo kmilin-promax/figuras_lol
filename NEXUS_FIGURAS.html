@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NEXUS FIGURAS · Figuras coleccionables de League of Legends</title>
+<meta name="description" content="Tienda de fans de figuras coleccionables de League of Legends. Envíos a Colombia y EE. UU.">
+<meta property="og:title" content="NEXUS FIGURAS"><meta property="og:type" content="website">
+<script type="application/ld+json" id="ld"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A1428;--bg2:#0f1c36;--gold:#C8AA6E;--teal:#0AC8B9;--bone:#F0E6D2;--ac:#0AC8B9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--bone);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.cz{font-family:Cinzel,Georgia,serif;letter-spacing:.04em}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.wrap{max-width:1200px;margin:auto;padding:0 18px}section{padding:72px 0}
+h2{font-size:clamp(26px,5vw,38px);color:var(--gold);margin:0 0 28px;text-align:center}
+.btn{background:linear-gradient(135deg,var(--gold),#a88a4e);color:#0A1428;border:0;padding:11px 20px;border-radius:4px;font-weight:700;transition:transform .25s,opacity .25s;display:inline-block}
+.btn:hover{transform:translateY(-2px) scale(1.03)}.btn:active{transform:scale(.97)}
+.btn.o{background:none;border:1px solid var(--ac);color:var(--bone)}
+.btn.t{background:var(--teal)}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,20,40,.88);backdrop-filter:blur(10px);border-bottom:1px solid #c8aa6e44;padding-top:env(safe-area-inset-top,0px)}
+.hd{display:flex;align-items:center;gap:12px;height:62px}
+.logo{font-family:Cinzel;font-weight:700;color:var(--gold);font-size:19px;display:flex;gap:8px;align-items:center}
+.logo i{width:22px;height:22px;background:var(--teal);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+nav{display:flex;gap:16px;margin-left:auto;font-size:14px}nav a{opacity:.8;transition:opacity .2s}nav a:hover{opacity:1;color:var(--gold)}
+.hd input,.hd select{background:#0f1c36;border:1px solid #c8aa6e55;color:var(--bone);border-radius:4px;padding:6px 8px;width:110px}
+.cartb{position:relative;background:none;border:1px solid var(--gold);border-radius:4px;padding:6px 10px}
+#cc{position:absolute;top:-8px;right:-8px;background:var(--teal);color:#000;border-radius:10px;font-size:11px;padding:0 6px;font-weight:700}
+#mb{display:none;background:none;border:0;font-size:24px}
+@media(max-width:900px){nav{position:fixed;top:calc(62px + env(safe-area-inset-top,0px));left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 22px;transform:translateY(-130%);transition:transform .35s;margin:0;border-bottom:1px solid var(--gold)}nav.on{transform:none}#mb{display:block;margin-left:auto}.hd input{display:none}}
+/* hero */
+#inicio{padding:0;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 40%,color-mix(in srgb,var(--ac) 25%,transparent),transparent 55%),var(--bg)}
+.hx{position:absolute;inset:0;pointer-events:none}.hx b{position:absolute;width:6px;height:6px;background:var(--gold);border-radius:50%;opacity:.5;animation:fl 8s linear infinite}
+@keyframes fl{from{transform:translateY(100vh)}to{transform:translateY(-10vh)}}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding-top:90px;position:relative}
+.hero h1{font-size:clamp(34px,7vw,64px);margin:.2em 0;line-height:1.1}.hero p{opacity:.85;max-width:480px}
+.car{overflow:hidden;border-radius:10px}.trk{display:flex;transition:transform .8s cubic-bezier(.65,0,.35,1);will-change:transform}
+.sl{min-width:100%;display:grid;place-items:center;padding:20px}
+.fig{width:min(70%,260px);aspect-ratio:3/4;border-radius:14px;position:relative;display:grid;place-items:center;text-align:center;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 70%,#000),#0A1428);border:1px solid var(--c);box-shadow:0 0 40px color-mix(in srgb,var(--c) 45%,transparent);font-family:Cinzel;font-size:20px}
+.fig small{display:block;font:11px Inter;opacity:.7;padding:0 10px}.fig .gl{font-size:64px;color:var(--c);filter:drop-shadow(0 0 10px var(--c))}
+.sl.on .fig{animation:fg 4s ease-in-out infinite}@keyframes fg{50%{transform:translateY(-12px) rotate(1.5deg)}}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:12px}.dots button{width:10px;height:10px;border-radius:50%;border:1px solid var(--gold);background:none;padding:0;transition:transform .3s,background .3s}.dots .on{background:var(--gold);transform:scale(1.4)}
+@media(max-width:800px){.hero{grid-template-columns:1fr}}
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+/* catalog */
+.fl{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:26px}.fl select{background:#0f1c36;color:var(--bone);border:1px solid var(--gold);padding:8px;border-radius:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
+.card{background:var(--bg2);border:1px solid #c8aa6e33;border-radius:10px;padding:14px;transition:transform .35s,border-color .35s;display:flex;flex-direction:column;gap:6px}
+.card:hover{transform:translateY(-6px);border-color:var(--c)}.card .fig{width:100%;font-size:17px;aspect-ratio:4/5;cursor:pointer}
+.card h3{margin:6px 0 0;font-size:18px;color:var(--c)}.meta{font-size:13px;opacity:.75}.pr{font-weight:700;color:var(--gold)}
+.dif{display:flex;gap:3px}.dif i{width:14px;height:5px;background:#ffffff22;border-radius:2px}.dif i.f{background:var(--c,var(--ac))}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(2,6,15,.8);z-index:80;opacity:0;pointer-events:none;transition:opacity .3s;display:grid;place-items:center;padding:12px}
+.ov.on{opacity:1;pointer-events:auto}
+.md{background:var(--bg);border:1px solid var(--ac);border-radius:12px;width:min(980px,100%);max-height:92vh;overflow:auto;padding:22px;transform:scale(.94);transition:transform .35s;position:relative}
+.ov.on .md{transform:none}.x{position:absolute;top:10px;right:14px;background:none;border:0;font-size:26px;z-index:2}
+.pg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:24px}@media(max-width:760px){.pg{grid-template-columns:1fr}}
+.rot{perspective:900px;touch-action:pan-y;cursor:grab}.rot .fig{width:80%;margin:auto;transition:transform .15s linear;--c:var(--ac)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.tabs button{background:none;border:1px solid #c8aa6e55;border-radius:4px;padding:5px 12px;transition:background .2s}.tabs .on{background:var(--ac);color:#000}
+.pnl{background:var(--bg2);padding:12px;border-radius:8px;font-size:14px;min-height:90px}
+.pg h2{text-align:left;color:var(--ac);margin:0}.pg h4{color:var(--gold);margin:14px 0 4px;font-family:Cinzel}
+.warn{font-size:11px;opacity:.6}
+/* drawer */
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--bg);border-left:1px solid var(--gold);z-index:90;transform:translateX(105%);transition:transform .4s cubic-bezier(.2,.8,.2,1);padding:18px;overflow:auto}.dr.on{transform:none}
+.it{display:grid;grid-template-columns:1fr auto;gap:4px;padding:10px 0;border-bottom:1px solid #ffffff1a;font-size:14px}
+.q button{width:26px;height:26px;border-radius:4px;border:1px solid var(--gold);background:none}
+/* forms */
+form{display:grid;gap:10px;max-width:520px;margin:auto}input,select,textarea{background:#0f1c36;border:1px solid #c8aa6e55;color:var(--bone);border-radius:4px;padding:10px;font:inherit;width:100%}
+.hp{position:absolute;left:-9999px}
+.rvw{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-bottom:28px}.rvw div{background:var(--bg2);padding:16px;border-radius:10px;border:1px solid #c8aa6e33}
+.soc{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.soc a{border:1px solid var(--gold);padding:10px 18px;border-radius:30px;transition:transform .25s,background .25s}.soc a:hover{background:var(--gold);color:#000;transform:translateY(-3px)}
+.loc{display:grid;grid-template-columns:1fr 1.4fr;gap:24px}@media(max-width:760px){.loc{grid-template-columns:1fr}}iframe{width:100%;height:320px;border:0;border-radius:10px}
+footer{border-top:1px solid var(--gold);padding:30px 0 90px;text-align:center;font-size:13px;opacity:.9}footer nav{position:static;transform:none;justify-content:center;flex-wrap:wrap;background:none;border:0;padding:0;flex-direction:row}
+/* chat */
+#cf{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;width:56px;height:56px;border-radius:50%;background:var(--teal);color:#000;border:0;font-size:24px;box-shadow:0 0 20px #0ac8b966}
+#ch{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:min(340px,calc(100% - 32px));background:var(--bg2);border:1px solid var(--teal);border-radius:12px;z-index:70;transform:translateY(20px) scale(.95);opacity:0;pointer-events:none;transition:transform .3s,opacity .3s;display:flex;flex-direction:column}
+#ch.on{transform:none;opacity:1;pointer-events:auto}#cm{height:220px;overflow:auto;padding:10px;font-size:14px;display:flex;flex-direction:column;gap:6px}
+#cm p{margin:0;padding:6px 10px;border-radius:8px;background:#ffffff14;max-width:85%}#cm p.u{align-self:flex-end;background:var(--teal);color:#000}
+.pm{display:none;gap:8px;flex-direction:column;margin-top:10px}.pm.on{display:flex}.pm code{background:#0f1c36;padding:6px;border-radius:4px;word-break:break-all;font-size:12px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,30px);background:var(--gold);color:#000;padding:10px 18px;border-radius:6px;opacity:0;transition:.3s;z-index:99;pointer-events:none}.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
+.fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit}.fig .nm{position:absolute;left:0;right:0;bottom:0;padding:18px 8px 8px;background:linear-gradient(transparent,#0A1428ee);border-radius:0 0 14px 14px;font-size:16px}.fig{overflow:hidden}.sl .fig{width:100%;aspect-ratio:16/10}.card .fig{aspect-ratio:4/5}.rot .fig{aspect-ratio:4/5}
+
+/* ===== Botones estilo GSAP: pill, sin bordes, relleno líquido suave ===== */
+:root{--ease:cubic-bezier(.65,0,.35,1)}
+.btn,.cartb,.tabs button,.soc a,.q button,.dots button,#cf{border:0!important;border-radius:999px;position:relative;overflow:hidden;isolation:isolate;font-weight:600;letter-spacing:.01em;transition:transform .5s var(--ease),color .45s var(--ease),background-color .45s var(--ease);will-change:transform;-webkit-tap-highlight-color:transparent}
+.btn{background:var(--gold);color:#0A1428;padding:12px 24px}
+.btn.t{background:var(--teal)}
+.btn.o,.cartb,.tabs button,.soc a,.q button{background:rgba(240,230,210,.09);color:var(--bone)}
+.btn.o{padding:12px 24px}.tabs button{padding:7px 16px}.cartb{padding:8px 14px}.soc a{padding:11px 22px}
+.btn::before,.cartb::before,.tabs button::before,.soc a::before,.q button::before{content:"";position:absolute;left:-10%;width:120%;top:0;height:220%;background:var(--bone);border-radius:50% 50% 0 0/38% 38% 0 0;transform:translate3d(0,100%,0);transition:transform .6s var(--ease);z-index:-1}
+.btn.o::before,.cartb::before,.tabs button::before,.soc a::before,.q button::before{background:var(--gold)}
+.btn:hover::before,.cartb:hover::before,.tabs button:hover::before,.soc a:hover::before,.q button:hover::before,.btn:focus-visible::before{transform:translate3d(0,-50%,0)}
+.btn:hover,.btn.o:hover,.cartb:hover,.tabs button:hover,.soc a:hover,.q button:hover{color:#0A1428;transform:none}
+.btn:active,.cartb:active,.tabs button:active,.soc a:active,.q button:active,#cf:active{transform:scale(.95);transition-duration:.15s}
+.btn.t:hover{color:#0A1428}
+.tabs button.on{background:var(--ac);color:#0A1428}.tabs button.on:hover::before{background:var(--bone)}
+.dots button{background:rgba(240,230,210,.3);width:10px;height:10px}.dots button.on{background:var(--gold);transform:scale(1.5)}.dots button:hover{background:var(--bone)}
+#cf{transition:transform .5s var(--ease),box-shadow .5s}#cf:hover{transform:scale(1.1) rotate(-6deg);box-shadow:0 0 34px #0ac8b9aa}
+.x,#mb{transition:transform .5s var(--ease),opacity .3s;opacity:.8}.x:hover,#mb:hover{transform:rotate(90deg);opacity:1}
+.soc a{background:rgba(240,230,210,.09)}.soc a:hover{transform:none}
+input,select,textarea{border:0!important;background:rgba(240,230,210,.08)!important;border-radius:999px;transition:background-color .35s var(--ease),box-shadow .35s var(--ease)}
+textarea{border-radius:18px}input:focus,select:focus,textarea:focus{background:rgba(240,230,210,.14)!important;box-shadow:0 0 0 2px var(--ac)!important;outline:0}
+.hd input,.hd select,.fl select{padding:8px 14px}.fl select{background:rgba(240,230,210,.08)!important}
+.card .btn,.card .btn.o{padding:9px 16px;font-size:14px}
+@media(prefers-reduced-motion:reduce){.btn::before,.cartb::before,.tabs button::before,.soc a::before,.q button::before{transition-duration:.01ms}}
+
+/* ===== ORYZO: cuarto oscuro editorial ===== */
+:root{--bg:#100904;--bg2:#100904;--gold:#ffedd7;--teal:#ffedd7;--bone:#ffedd7;--bark:#382416;--cork:#40372e;--drift:#6c5f51;--ember:#dc5000;--ease:cubic-bezier(.65,0,.35,1)}
+body{font:500 13px/1.3 Inter,system-ui,sans-serif;font-feature-settings:"ss01" on;text-transform:uppercase;letter-spacing:0;background:#100904;color:#ffedd7}
+h1,h2,h3,h4,.cz,.logo{font-family:Inter,system-ui,sans-serif!important;font-weight:500;letter-spacing:0;text-transform:uppercase}
+.wrap{max-width:none;padding:0 24px}section{padding:96px 0;border-top:1px dashed var(--cork)}#inicio{border:0}
+h2{text-align:left;color:#ffedd7;font-size:clamp(30px,5vw,41px);line-height:.9;margin-bottom:41px}
+.hero p,.pnl,.pnl p,#li p,.rvw p,#cm,#ts,.dr .it span:first-child,.warn{text-transform:none;font-weight:400}
+.hero p{font-size:clamp(18px,2.2vw,29px);line-height:1.26;max-width:520px}.pnl{font-size:15px;line-height:1.4}.pnl button,.pnl b{text-transform:uppercase;font-weight:500}
+#li p{font-size:18px}
+/* header transparente */
+header{background:linear-gradient(#100904e6,transparent);backdrop-filter:none;border:0}.logo{font-size:14px}.logo i{background:#ffedd7}
+nav{gap:24px;font-size:12px}nav a{opacity:1;padding-bottom:3px;border-bottom:1px dashed transparent;transition:border-color .35s var(--ease)}nav a:hover{color:#ffedd7;border-color:var(--cork);border-bottom-color:#ffedd7}
+.hd input,.hd select{width:100px;font-size:12px}
+@media(max-width:900px){nav{background:#100904;border-bottom:1px dashed var(--cork)}}
+.side{position:fixed;right:10px;top:50%;writing-mode:vertical-rl;font-size:11px;z-index:40;pointer-events:none;transform:translateY(-50%)}@media(max-width:700px){.side{display:none}}
+/* hero */
+#inicio{background:#100904}.hx{display:none}
+.hero h1{font-size:clamp(44px,8.5vw,110px);line-height:.9;font-weight:500}.hero h1 span{color:var(--drift)!important}.hero span.cz{color:#ffedd7!important;font-size:12px}
+.car{border-radius:0}.fig{border:0!important;box-shadow:none!important;border-radius:0!important;background:#1a110a}.card .fig,.rot .fig{border-radius:0}.fig .nm{font:500 12px Inter;padding:24px 12px 12px;border-radius:0}
+.sl.on .fig{animation:none}.sl .fig{filter:saturate(.95) contrast(1.05)}
+/* tarjetas */
+.card{background:transparent;border:1px dashed var(--cork);border-radius:12px;padding:18px;gap:10px}.card:hover{border-color:#ffedd7;transform:translateY(-4px)}
+.card h3{color:#ffedd7;font-size:18px;line-height:1}.meta{font-size:12px;opacity:1}.pr{color:#ffedd7;font-size:14px}.dif i{background:var(--cork);border-radius:0}.dif i.f{background:#ffedd7}
+.grid{gap:18px}.fl{justify-content:flex-start}.fl select{border-radius:0!important}
+/* modal / drawer */
+.ov{background:rgba(16,9,4,.88)}.md,.dr{background:#100904;border:1px dashed var(--cork);border-radius:12px}.dr{border-radius:0;border-width:0 0 0 1px}
+.pg h2{color:#ffedd7;font-size:clamp(30px,5vw,51px)}.pg h2:after{content:"";display:block;width:48px;height:2px;background:var(--ac);margin-top:12px}
+.pnl{background:transparent;border:1px dashed var(--cork);border-radius:12px;padding:18px}.pg h4{color:#ffedd7;font-family:Inter}
+.it{border-bottom:1px dashed var(--cork)}
+.soc{justify-content:flex-start}.rvw div{background:transparent;border:1px dashed var(--cork);border-radius:12px;padding:24px}#contacto{text-align:left!important}
+footer{border-top:1px dashed var(--cork);font-size:10px;opacity:1}footer p{margin:10px 0}footer .cr{color:var(--ember)}footer .cr a{text-decoration:underline}
+/* botones: pill relleno Bark / fantasma contorno cream */
+.btn{background:var(--bark)!important;color:#ffedd7;border:0!important;border-radius:36px;padding:14px 24px;font-size:12px;box-shadow:none}
+.btn.o,.cartb,.tabs button,.soc a,.q button{background:transparent!important;color:#ffedd7;border:1px solid #ffedd7!important;border-radius:22.5px;padding:7.5px 18px;font-size:12px}
+.btn.o{padding:13px 24px;border-radius:36px}.tabs button{border-style:solid}
+.btn::before{background:#ffedd7}.btn:hover,.btn.o:hover,.cartb:hover,.tabs button:hover,.soc a:hover,.q button:hover,.btn.t:hover{color:#100904!important}
+.tabs button.on{background:var(--bark)!important}.tabs button.on:hover{color:#100904!important}
+#cc{background:#ffedd7;color:#100904}.dots button{background:var(--cork)!important}.dots button.on{background:#ffedd7!important}
+#cf{background:var(--bark)!important;color:#ffedd7;box-shadow:none!important}#cf:hover{box-shadow:none!important}
+#ch{background:#100904;border:1px dashed #ffedd7;border-radius:12px}#cm p{background:var(--bark);border-radius:12px}#cm p.u{background:#ffedd7;color:#100904}
+.toast{background:#ffedd7;border-radius:36px;font-size:13px}
+/* inputs: solo línea inferior */
+input,select,textarea{background:transparent!important;border:0!important;border-bottom:1px solid #ffedd7!important;border-radius:0!important;padding:8px 2px!important;text-transform:none;box-shadow:none!important;font-size:14px}
+input::placeholder,textarea::placeholder{text-transform:uppercase;color:var(--drift);font-size:12px}
+input:focus,select:focus,textarea:focus{background:transparent!important;border-bottom-color:var(--ember)!important;box-shadow:none!important}
+select option{background:#100904;color:#ffedd7}
+
+/* ===== v3: hero HD, botones rápidos, cajas suaves ===== */
+.cw{position:relative;display:inline-block}#cc{position:absolute;top:-6px;right:-6px;z-index:3;pointer-events:none}#cc.bump{animation:bp .5s var(--ease)}@keyframes bp{40%{transform:scale(1.7)}}
+.cartb svg{width:20px;height:20px;display:block}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn svg{width:17px;height:17px}
+.btn.o,.cartb,.q button,.tabs button,.soc a{background:rgba(255,237,215,.1)!important;border:0!important}
+.tabs button.on{background:#ffedd7!important;color:#100904}
+.pg h2:after{display:none}.dif i.f{background:#ffedd7!important}
+nav a,.chip,.ic{position:relative;overflow:hidden;isolation:isolate;display:inline-block;border:0;border-radius:36px;cursor:pointer}
+header nav a,footer nav a{padding:8px 14px;border:0}header nav{gap:4px}
+header nav a:hover,footer nav a:hover{color:#100904;border:0}
+.chip{background:rgba(255,237,215,.1);color:#ffedd7;padding:8px 16px;font:500 12px Inter;text-transform:uppercase}.chip.on{background:#ffedd7;color:#100904}
+.ic,.soc a.ic{width:54px;height:54px;display:inline-grid;place-items:center;padding:0!important;border-radius:50%;color:#ffedd7}.ic svg{width:22px;height:22px}
+.chip::before,nav a::before,.ic::before{content:"";position:absolute;left:-10%;width:120%;top:0;height:220%;background:#ffedd7;border-radius:50% 50% 0 0/38% 38% 0 0;transform:translate3d(0,100%,0);z-index:-1;transition:transform .26s cubic-bezier(.3,.7,.2,1)}
+.chip:hover::before,nav a:hover::before,.ic:hover::before{transform:translate3d(0,-50%,0)}
+.chip:hover,.ic:hover,.soc a.ic:hover{color:#100904!important}
+.btn,.cartb,.tabs button,.q button,.chip,.ic,nav a{transition:transform .25s var(--ease),color .16s linear,background-color .18s linear!important}
+.btn::before,.cartb::before,.tabs button::before,.soc a::before,.q button::before{transition:transform .26s cubic-bezier(.3,.7,.2,1)!important}
+.fp{display:none;gap:16px;margin:0 0 28px;padding:20px}.fp.on{display:grid;animation:fi .3s var(--ease)}@keyframes fi{from{opacity:0;transform:translate3d(0,-10px,0)}}
+.fg{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.fl2{min-width:96px;opacity:.7;font-size:12px}.ch{display:flex;gap:8px;flex-wrap:wrap}
+.card,.pnl,.rvw div,.fp{background:rgba(56,36,22,.5)!important;border:0!important;border-radius:20px}
+.card:hover,.pnl:hover,.rvw div:hover{background:rgba(78,50,30,.7)!important}
+.md,.dr{background:#16100a!important;border:0!important;border-radius:20px}.dr{border-radius:0}#ch{background:#16100a;border:0;border-radius:20px}
+/* imágenes: HD, sin bordes, bordes difuminados */
+.fig{background:transparent!important;-webkit-mask-image:radial-gradient(ellipse 88% 88% at 50% 50%,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse 88% 88% at 50% 50%,#000 64%,transparent 100%)}
+.fig img{transition:transform .9s var(--ease)}.card:hover .fig img{transform:scale(1.06)}
+.card .fig,.rot .fig{aspect-ratio:1/1!important;width:100%}.rot{user-select:none;-webkit-user-select:none;touch-action:none}.rot .fig{width:92%}
+.hero{grid-template-columns:1fr 1.4fr}
+.car{overflow:visible}.trk{display:grid!important;transform:none!important;transition:none}
+.sl{grid-area:1/1;padding:0;opacity:0;transform:scale(1.07);transition:opacity .9s var(--ease),transform 1.8s var(--ease);pointer-events:none}.sl.on{opacity:1;transform:scale(1);pointer-events:auto}
+.sl .fig{width:100%;aspect-ratio:1215/717!important;-webkit-mask-image:radial-gradient(ellipse 70% 72% at 50% 50%,#000 52%,transparent 100%);mask-image:radial-gradient(ellipse 70% 72% at 50% 50%,#000 52%,transparent 100%)}
+.sl.on .fig{animation:dr 7s ease-in-out infinite}@keyframes dr{50%{transform:translate3d(0,-8px,0) scale(1.03)}}
+.np{position:fixed;top:calc(74px + env(safe-area-inset-top,0px));right:18px;z-index:95;display:flex;gap:12px;align-items:center;background:#382416;border-radius:16px;padding:8px 16px 8px 8px;text-transform:none;font-weight:400;font-size:14px;opacity:0;transform:translate3d(0,-14px,0) scale(.96);pointer-events:none;transition:opacity .3s var(--ease),transform .4s var(--ease)}
+.np.on{opacity:1;transform:none}.np img{width:44px;height:44px;border-radius:10px;object-fit:cover}
+
+/* ===== v4: idioma, figuras 3D, formas orgánicas, filtros, carrito ===== */
+:root{--mage:#8fd8ff;--assn:#ff5c5c}
+.rm{color:var(--mage)}.ra{color:var(--assn)}
+.chip:hover .rm,.chip.on .rm{color:#0b5f93}.chip:hover .ra,.chip.on .ra{color:#a8071f}
+
+/* --- header: buscador, idioma --- */
+.sw{position:relative;width:170px;transition:width .4s var(--ease)}.sw:focus-within{width:230px}
+#q{display:block!important;width:100%!important;background:rgba(255,237,215,.1)!important;border:0!important;border-bottom:0!important;border-radius:999px!important;padding:9px 34px 9px 16px!important;font-size:12px!important;text-transform:uppercase;color:#ffedd7;-webkit-appearance:none;appearance:none;transition:background-color .3s var(--ease),box-shadow .3s var(--ease)}
+#q:focus{background:rgba(255,237,215,.16)!important;border-bottom:0!important;box-shadow:0 0 0 2px var(--ac)!important}
+#q::-webkit-search-cancel-button,#q::-webkit-search-decoration{-webkit-appearance:none;display:none}
+#q::placeholder{color:var(--drift);text-transform:uppercase}
+input:-webkit-autofill{-webkit-text-fill-color:#ffedd7;transition:background-color 9999s}
+::selection{background:#ffedd7;color:#100904}
+.sx{position:absolute;right:8px;top:50%;transform:translateY(-50%) scale(.6);width:22px;height:22px;border:0;border-radius:50%;background:#ffedd7;color:#100904;font-size:15px;line-height:1;display:grid;place-items:center;padding:0;opacity:0;pointer-events:none;transition:opacity .25s,transform .35s var(--ease)}
+.sx.on{opacity:1;pointer-events:auto;transform:translateY(-50%) scale(1)}
+.sg{position:absolute;top:calc(100% + 10px);left:0;width:max(100%,290px);background:#16100a;border-radius:20px;padding:8px;display:flex;flex-direction:column;gap:2px;opacity:0;transform:translate3d(0,-8px,0);pointer-events:none;transition:opacity .25s var(--ease),transform .35s var(--ease);z-index:60}
+.sg.on{opacity:1;transform:none;pointer-events:auto}
+.si{display:flex;gap:12px;align-items:center;background:transparent;border:0;border-radius:14px;padding:6px 10px 6px 6px;text-align:left;color:#ffedd7;transition:background-color .2s}
+.si:hover,.si:focus-visible{background:rgba(255,237,215,.12)}
+.si .fig.bl{width:40px!important;aspect-ratio:1/1!important;flex:none;box-shadow:none!important}
+.si span:last-child{display:flex;flex-direction:column;gap:2px;font-size:13px}.si small{font-size:11px;opacity:.9}
+.si0{margin:0;padding:12px;font-size:12px;color:var(--drift)}
+.lg{display:flex;gap:6px}
+.lg .lb{padding:7px 14px;font-size:12px;border-radius:36px}
+.lg .lb.on{background:#ffedd7!important;color:#100904}
+.lb::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle,#ffedd7 0,transparent 70%);opacity:0;transform:scale(.2);pointer-events:none;z-index:-1}
+.lb.pp{animation:prs .55s var(--ease)}.lb.pp::after{animation:rip .65s var(--ease)}
+.lb.pp .tx{display:inline-block;animation:txa .5s var(--ease)}
+@keyframes prs{0%{transform:scale(1)}28%{transform:scale(.86)}68%{transform:scale(1.08)}100%{transform:scale(1)}}
+@keyframes rip{0%{opacity:.8;transform:scale(.2)}100%{opacity:0;transform:scale(1.9)}}
+@keyframes txa{0%{opacity:0;transform:translateY(7px) scale(.8)}100%{opacity:1;transform:none}}
+body.lt section,body.lt footer,body.lt .hd .logo,body.lt header nav{animation:lfx .6s var(--ease)}
+@keyframes lfx{from{opacity:0;filter:blur(5px)}to{opacity:1;filter:none}}
+@media(max-width:1180px){
+ nav{position:fixed;top:calc(62px + env(safe-area-inset-top,0px));left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 22px;transform:translateY(-130%);transition:transform .35s;margin:0;border-bottom:1px dashed var(--cork)}
+ nav.on{transform:none}#mb{display:block;margin-left:auto}footer nav{position:static;transform:none;flex-direction:row;padding:0;border:0;background:none}
+ .hero{padding-top:110px}
+}
+@media(max-width:700px){.hd{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px}.sw{order:9;flex:1 1 100%;width:auto}.sw:focus-within{width:auto}nav{top:calc(112px + env(safe-area-inset-top,0px))}.hero{padding-top:150px}}
+
+/* --- imágenes orgánicas, sin bordes ni marcos rectangulares --- */
+.fig.bl{border-radius:var(--rd)!important;-webkit-mask-image:none!important;mask-image:none!important;box-shadow:0 0 44px -8px color-mix(in srgb,var(--c) 60%,transparent)!important;transition:border-radius 1s var(--ease),box-shadow .6s var(--ease)}
+.card:hover .fig.bl{border-radius:var(--rd2)!important}
+.card .fig.bl{width:84%!important;margin:4px auto}
+.np img{border-radius:var(--rd,50% 50% 46% 54%/52% 48% 52% 48%);width:48px;height:48px}
+
+/* --- figurinas 3D --- */
+.stage{--h:min(54vh,460px,calc(90vw/.78));--w:calc(var(--h)*.78);perspective:1300px;display:grid;place-items:center;padding:12px 0 calc(var(--w)*.22);cursor:grab;user-select:none;-webkit-user-select:none;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.stage:active{cursor:grabbing}.stage *{-webkit-user-drag:none}
+.f3f{transform-style:preserve-3d;animation:flt 6s ease-in-out infinite}@keyframes flt{50%{transform:translate3d(0,-10px,0)}}
+.f3{--rd:48% 52% 50% 50%/42% 44% 56% 58%;position:relative;width:var(--w);height:var(--h);transform-style:preserve-3d;transform:rotateX(-10deg);will-change:transform}
+.ly{position:absolute;inset:0;display:block;border-radius:var(--rd);transform:translateZ(calc((var(--i) - 15)*1px));background:linear-gradient(180deg,color-mix(in srgb,var(--c) 62%,#2a1a0f),color-mix(in srgb,var(--c) 30%,#1b110a))}
+.ly.fr{--i:30;background:var(--img) 50% var(--pos)/cover no-repeat;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.ly.fr::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(118deg,rgba(255,255,255,.2),transparent 36%,transparent 68%,rgba(0,0,0,.32))}
+.ly.bk{--i:0;transform:translateZ(-15px) rotateY(180deg);backface-visibility:hidden;-webkit-backface-visibility:hidden;display:grid;place-content:center;justify-items:center;gap:8px;text-align:center;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--c) 42%,#382416),#16100a 72%)}
+.ly.bk b{font-size:calc(var(--w)*.28);line-height:1;filter:drop-shadow(0 0 14px var(--c))}.ly.bk small{font-size:11px;opacity:.75}
+.pd{position:absolute;left:50%;top:calc(100% + 4px);width:0;height:0;transform-style:preserve-3d}
+.pd i{--pw:calc(var(--w)*.96);position:absolute;width:var(--pw);height:var(--pw);left:calc(var(--pw)*-.5);top:calc(var(--pw)*-.5);border-radius:50%;background:linear-gradient(135deg,#4c3321,#2a1a0f);transform:rotateX(90deg) translateZ(calc(var(--k)*-1px))}
+.pd i:first-child{background:radial-gradient(circle,color-mix(in srgb,var(--c) 40%,#5a3b25),#3d2819 74%)}
+.pd i.gl{background:radial-gradient(circle,color-mix(in srgb,var(--c) 75%,transparent),transparent 66%);transform:rotateX(90deg) translateZ(-26px) scale(1.3);filter:blur(12px)}
+#rt.stage{--h:min(40vh,340px,calc(70vw/.78))}
+.hero .car{overflow:visible}.sl{display:grid;place-items:center}
+.sl:not(.on) .stage{pointer-events:none}
+
+/* --- tarjetas --- */
+.meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px}
+.pg .meta{gap:6px 14px}
+.empty{grid-column:1/-1;margin:0;padding:30px;border-radius:20px;background:rgba(56,36,22,.5);text-align:center;color:#ffedd7}
+
+/* --- filtros --- */
+.chip.rs-mana{color:#3d6df0}.chip.rs-energy{color:#ffd23f}.chip.rs-none{color:#9b9b9b}
+.chip.rs-mana:hover,.chip.rs-mana.on{color:#1a3fa8!important}
+.chip.rs-energy:hover,.chip.rs-energy.on{color:#8a6500!important}
+.chip.rs-none:hover,.chip.rs-none.on{color:#4a4a4a!important}
+
+/* --- transición entre pestañas --- */
+.swap>*{animation:swp .5s var(--ease) both}
+.swap>*:nth-child(2){animation-delay:.06s}.swap>*:nth-child(3){animation-delay:.12s}.swap>*:nth-child(n+4){animation-delay:.18s}
+@keyframes swp{from{opacity:0;transform:translate3d(0,12px,0);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}
+
+/* --- carrito --- */
+.it{display:flex;flex-direction:column;align-items:center;gap:12px;padding:16px 0}
+.fig.ci{width:108px!important;aspect-ratio:1/1!important;box-shadow:none!important;margin:0 auto}
+.ir{display:grid;grid-template-columns:1fr auto;gap:6px 12px;width:100%;align-items:center}.ir .q{grid-column:1/-1}
+.tt{display:flex;justify-content:space-between;gap:12px;padding:3px 0}.tt.big{font-size:16px;padding-top:10px;border-top:1px dashed var(--cork);margin-top:6px}
+.ship-note{margin:10px 0 0;font-size:12px;line-height:1.35;text-transform:none;font-weight:400;color:#ffedd7;opacity:.8}
+
+/* --- plataformas con su color --- */
+.soc a.ic,.ic{color:var(--bc,#ffedd7)}
+.ic::before{background:var(--bc,#ffedd7)!important}
+.soc a.ic:hover,.ic:hover{color:var(--bh,#100904)!important}
+.ic[aria-label=TikTok] svg{filter:drop-shadow(1.6px 1.2px 0 #fe2c55)}
+.bdg{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--bc);color:var(--tc,#100904);font-size:12px;font-weight:700;flex:none;text-transform:none}
+.bk2{display:flex;align-items:center;gap:10px;margin:8px 0}.bk2 b{color:var(--bc)}
+.btn .bdg{width:20px;height:20px;font-size:11px}
+@media(min-width:520px){.dr.on~.np{right:calc(min(400px,100%) + 18px)}}
+
+/* ===== estilo Starfield: menta / jade / hueso sobre azul noche ===== */
+html{background:#0a0a24}body{background:transparent}
+#scene{position:fixed;inset:0;width:100vw;height:100vh;display:block;z-index:-1;pointer-events:none}
+:root{--bg:#0a0a24;--bg2:rgba(10,10,36,.6);--gold:#eafff2;--teal:#aef6cf;--bone:#eafff2;--bark:#14143a;--cork:#2f5a52;--drift:#5fe6a0;--ember:#5fe6a0;--ac:#5fe6a0}
+#inicio{background:transparent!important}
+header{background:rgba(10,10,36,.55)!important;border-bottom:1px solid #aef6cf33!important}
+.md,.dr{background:#0c0c2c!important;border-color:#aef6cf55!important}#ch{background:#0c0c2c!important}
+.card{background:rgba(10,10,36,.5)!important;backdrop-filter:blur(6px);border-color:#aef6cf44!important}
+.empty{background:rgba(20,20,58,.6)!important}
+.btn{background:linear-gradient(135deg,#aef6cf,#5fe6a0)!important;color:#06142a!important}.btn.o{color:#eafff2!important}.btn.o.lb.on,.btn.o.lb.on .tx{background:#aef6cf!important;color:#06142a!important}
+.ly{background:linear-gradient(180deg,color-mix(in srgb,var(--c) 62%,#0b1a2c),color-mix(in srgb,var(--c) 30%,#070a1c))}
+.ly.bk{background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--c) 42%,#1a1a46),#0a0a24 72%)}
+.pd i{background:linear-gradient(135deg,#1c2a4a,#0b1230)}.pd i:first-child{background:radial-gradient(circle,color-mix(in srgb,var(--c) 40%,#23365a),#10163a 74%)}
+.pd i.gl{background:radial-gradient(circle,color-mix(in srgb,var(--c) 75%,transparent),transparent 66%)}
+/* hero: figuras recortadas (solo la figura, sin fondo) */
+.stage.cutst{--w:calc(var(--h)*1.15)}
+.f3.cut .ly{border-radius:0;background:var(--cut) 50% 100%/contain no-repeat;transform:translateZ(calc((var(--i) - 7)*2px));filter:brightness(.38) saturate(.7)}
+.f3.cut .ly.fr{--i:14;filter:drop-shadow(0 0 18px color-mix(in srgb,var(--c) 50%,transparent))}
+.f3.cut .ly.fr::after{display:none}
+.f3.cut .ly.bk{--i:0;transform:translateZ(-14px) rotateY(180deg);filter:brightness(.5)}
+</style></head><body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<header><div class="wrap hd">
+<a class="logo" href="#inicio"><i></i><span id="bn">NEXUS FIGURAS</span></a>
+<button id="mb" data-al="a_menu">☰</button>
+<nav id="nv"><a href="#inicio" data-l10n="n_home"></a><a href="#campeones" data-l10n="n_champs"></a><a href="#referencias" data-l10n="n_refs"></a><a href="#reservas" data-l10n="n_book"></a><a href="#ubicacion" data-l10n="n_loc"></a><a href="#contacto" data-l10n="n_contact"></a></nav>
+<div class="sw"><input id="q" type="search" autocomplete="off" spellcheck="false" data-ph="ph_search" data-al="a_search"><button class="sx" id="sx" type="button" data-al="a_clear">×</button><div class="sg" id="sg"></div></div>
+<div class="lg" role="group" data-al="a_lang"><button class="btn o lb on" type="button" data-l="es" aria-pressed="true"><span class="tx">ESP</span></button><button class="btn o lb" type="button" data-l="en" aria-pressed="false"><span class="tx">ENG</span></button></div>
+<span class="cw"><button class="cartb" id="cb" data-al="a_cart"></button><span id="cc">0</span></span>
+</div></header>
+<div class="side" aria-hidden="true" data-l10n="side"></div>
+
+<section id="inicio"><div class="hx" id="hx"></div><div class="wrap hero">
+<div><span class="cz" data-l10n="kicker"></span><h1 data-l10n="h1"></h1><p data-l10n="hero_p"></p><p><a class="btn" href="#campeones" data-l10n="b_view"></a> <a class="btn o" href="#reservas" data-l10n="b_res"></a></p></div>
+<div><div class="car" id="car"><div class="trk" id="tk"></div></div><div class="dots" id="dt"></div></div>
+</div></section>
+
+<section id="campeones"><div class="wrap"><h2 data-l10n="h_champs"></h2>
+<div class="fl"><button class="btn o" id="fb" aria-expanded="false" aria-controls="fp"><span data-l10n="filters"></span><span id="fn"></span> ▾</button></div><div class="fp" id="fp"></div>
+<div class="grid" id="gr"></div></div></section>
+
+<section id="referencias" style="background:var(--bg2)"><div class="wrap"><h2 data-l10n="h_refs"></h2><div class="rvw" id="rw"></div>
+<form id="rf"><input class="hp" name="website" tabindex="-1" autocomplete="off"><input name="n" data-ph="ph_name" required minlength="2"><input name="p" data-ph="ph_country" required><select name="s"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><textarea name="t" data-ph="ph_review" required minlength="10"></textarea><label class="warn"><span data-l10n="photo"></span><input type="file" accept="image/*"></label><button class="btn" data-l10n="send_review"></button></form></div></section>
+
+<section id="reservas"><div class="wrap"><h2 data-l10n="h_book"></h2>
+<form id="vf"><input class="hp" name="website" tabindex="-1" autocomplete="off"><select name="c" id="vc" required></select><input name="q" type="number" min="1" max="10" value="1" required><input name="n" data-ph="ph_bname" required><input name="e" type="email" data-ph="ph_mail" required><input name="w" type="tel" data-ph="ph_wa" required pattern="[+0-9 ]{8,16}"><input name="a" id="dep" type="number" min="0" data-ph="ph_dep"><button class="btn" data-l10n="confirm"></button></form></div></section>
+
+<section style="background:var(--bg2)"><div class="wrap"><h2 data-l10n="h_social"></h2><div class="soc" id="sc"></div></div></section>
+
+<section id="ubicacion"><div class="wrap"><h2 data-l10n="h_loc"></h2><div class="loc"><div id="li"></div><iframe id="mp" title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></section>
+
+<section id="contacto" style="background:var(--bg2);text-align:center"><div class="wrap"><h2 data-l10n="h_contact"></h2><p class="soc"><a class="ic" id="wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp" style="--bc:#25D366;--bh:#100904"></a><a class="ic" id="em" aria-label="Email" title="Email" style="--bc:#EA4335;--bh:#fff"></a></p></div></section>
+
+<footer><div class="wrap"><nav><a href="#" data-pk="f_ship" data-l10n="f_ship_l"></a><a href="#" data-pk="f_ret" data-l10n="f_ret_l"></a><a href="#" data-pk="f_priv" data-l10n="f_priv_l"></a><a href="#" data-pk="f_terms" data-l10n="f_terms_l"></a></nav>
+<p data-l10n="legal"></p>
+<p class="cr"><span data-l10n="built"></span> <a href="#" data-l10n="studio"></a></p></div></footer>
+
+<div class="ov" id="ovm" role="dialog" aria-modal="true"><div class="md"><button class="x" data-close data-al="a_close">×</button><div id="mc"></div></div></div>
+<div class="ov" id="ovk" role="dialog" aria-modal="true"><div class="md" style="width:min(560px,100%)"><button class="x" data-close data-al="a_close">×</button><div id="kc"></div></div></div>
+<aside class="dr" id="dr" aria-label="Cart"><button class="x" data-close data-al="a_close">×</button><h3 class="cz" style="color:var(--gold)" data-l10n="cart_title"></h3><div id="ci"></div><div id="ct"></div><button class="btn" style="width:100%;margin-top:12px" id="go" data-l10n="go"></button></aside>
+<button id="cf" aria-label="Chat">💬</button>
+<div id="ch"><div style="padding:10px;border-bottom:1px solid #fff2" class="cz" data-l10n="chat_title"></div><div id="cm"></div><div class="row" style="padding:8px" id="qr"></div><div style="display:flex;gap:6px;padding:8px"><input id="cin" data-ph="chat_ph"><button class="btn" id="cs">→</button></div></div>
+<div class="toast" id="ts"></div><div class="np" id="np" role="status" aria-live="polite"></div>
+
+<script>
+/* ===== CONFIG EDITABLE ===== */
+const CFG={name:"NEXUS FIGURAS",wa:"573000000000",email:"hola@tutienda.com",addr:"Calle 00 #00-00, Bogotá, Colombia",lat:4.711,lng:-74.0721,
+ rate:4000,shipPct:.17,wompiKey:"pub_test_XXXX",stripeKey:"pk_test_XXXX",tawk:"",
+ crypto:{BTC:["bc1q-TU-DIRECCION","Bitcoin"],ETH:["0xTU-DIRECCION","Ethereum ERC-20"],USDT:["TTU-DIRECCION","TRON TRC-20"],USDC:["0xTU-DIRECCION","Ethereum / Base"]},
+ bank:{"Bancolombia":"Ahorros 000-000000-00","Davivienda":"Ahorros 0000000000","Nequi":"300 000 0000","PSE":"Vía Wompi","ACH/Wire":"Routing 000000000 · Cuenta 0000000000"},
+ social:{Instagram:"https://instagram.com/",TikTok:"https://tiktok.com/",YouTube:"https://youtube.com/",Facebook:"https://facebook.com/",X:"https://x.com/",Discord:"https://discord.gg/"}};
+/* colores de cada plataforma: [color, color del ícono al pasar el mouse] */
+const BRAND={Instagram:["#E4405F","#fff"],TikTok:["#25F4EE","#100904"],YouTube:["#FF0000","#fff"],Facebook:["#1877F2","#fff"],X:["#FFFFFF","#100904"],Discord:["#5865F2","#fff"]};
+const PAY={Wompi:["#00C7A6","#100904","W"],Stripe:["#635BFF","#fff","S"],Bancolombia:["#FDDA24","#100904","B"],Davivienda:["#ED1C27","#fff","D"],Nequi:["#DA0081","#fff","N"],PSE:["#0A5FB4","#fff","P"],"ACH/Wire":["#2E7D32","#fff","$"],BTC:["#F7931A","#100904","₿"],ETH:["#627EEA","#fff","Ξ"],USDT:["#26A17B","#fff","₮"],USDC:["#2775CA","#fff","$"]};
+/* ===== DATOS (mover a champions.js al desplegar) — valores del juego: VERIFICAR CON EL PARCHE VIGENTE ===== */
+const C=[
+["qiyana","Qiyana","Emperatriz de los Elementos","Asesino",3,4800,"Heredera ambiciosa de una ciudad selvática que domina los elementos para reclamar un trono que cree suyo.","#E8A33D","🌿",1350,6300,
+ [["Privilegio real","Su ataque básico tras usar habilidad se potencia","15–85+","—"],["Filo de Ixtal","Lanza un filo y obtiene un elemento al tocar terreno","60–140","~7s"],["Terramoldeo","Dash hacia un terreno o muro","—","~14s"],["Audacia","Salta al objetivo y lo golpea","50–170","~18s"],["Gran exhibición","Onda de choque que aturde contra muros","100–300","~100s"]],
+ [["Q + E + R contra muro","Q E W R",3]],["Su ciudad es inspirada en culturas mesoamericanas del universo del juego.","Su fuerza depende del entorno."]],
+["anivia","Anivia","La Criofénix","Mago",2,4500,"Un ave de hielo eterna que renace para proteger su tierra helada.","#6FD0F0","❄️",3150,7800,
+ [["Renacer","Revive como huevo","—","240s"],["Escarcha","Orbe que atraviesa y explota","60–220","~11s"],["Cristalizar","Muro de hielo","—","~17s"],["Congelación","Daño duplicado si hay aturdimiento","55–205","~5s"],["Tormenta glacial","Zona de nieve persistente","40–140/s","~4s"]],
+ [["Muro + Q + E","W Q E R",2]],["Revive indefinidamente si el huevo sobrevive.","Su muro bloquea el paso enemigo."]],
+["katarina","Katarina","La Hoja Siniestra","Asesino",3,4600,"Una letal agente que resuelve todo con dagas y velocidad.","#C23B4B","🗡️",450,3150,
+ [["Voracidad","Reduce enfriamientos al eliminar","—","—"],["Hoja rebotante","Daga que rebota y deja otra","75–215","~11s"],["Preparación","Lanza daga al aire y gana velocidad","—","~15s"],["Shunpo","Parpadeo hacia objetivo o daga","15–95","~14s"],["Loto mortal","Gira infligiendo daño continuo","25–75/hit","~55s"]],
+ [["Q + E + W + R","Q E W R",3]],["Sus dagas son su sello.","Reinicia enfriamientos al matar."]],
+["sylas","Sylas","El Desencadenado","Mago",3,4700,"Mago rebelde que rompió sus cadenas y roba el poder de otros.","#9B7BD8","⛓️",4800,7800,
+ [["Explosión de petricita","Su ataque siguiente se potencia","—","—"],["Latigazo","Dos golpes en arco","60–200","~9s"],["Mataeyes","Se lanza y golpea","65–225","~13s"],["Abducir","Dash y gancho","70–230","~12s"],["Secuestro","Roba el ulti enemigo","—","~80s"]],
+ [["E + E2 + Q + W","E E Q W",3]],["Su magia viene de robar poderes.","Su combo combina movilidad y daño."]],
+["heimerdinger","Heimerdinger","El Venerable Inventor","Mago",2,4400,"Un anciano yordle genio que diseña torretas y artefactos explosivos.","#F5B94A","🔧",3150,7800,
+ [["Afinidad Hextech","Velocidad cerca de sus torretas","—","—"],["Torreta","Coloca torreta","—","~20s"],["Micro-cohetes","Cohetes que explotan","60–220","~7s"],["Granada","Aturde y daña","60–240","~11s"],["¡MEJORA!","Potencia la siguiente habilidad","—","~100s"]],
+ [["R + E + W","R E W",2]],["Las torretas son su arma principal.","Tiene gran presencia de laboratorio."]],
+["zoe","Zoe","El Aspecto del Crepúsculo","Mago",3,4500,"Una joven cósmica juguetona cuyo caos puede ser mortal.","#E86FC2","✨",3150,7800,
+ [["¡Más chispas!","Ataque potenciado tras hechizos","15–115","—"],["Estrella","Proyectil que crece","60–250","~7s"],["Robo de hechizos","Recoge un hechizo","—","~8s"],["Burbuja","Duerme al objetivo","60–240","~16s"],["Salto portal","Teletransporte breve","—","~11s"]],
+ [["E + Q","E Q",3]],["Su mayor arma es la burbuja.","Cuesta apuntarla."]],
+["bardo","Bardo","El Guardián Errante","Mago",3,4600,"Un viajero cósmico que recoge chimes y guía a sus aliados.","#7EC8A0","🔔",3150,7800,
+ [["Llamado viajero","Recoge chimes para poder","—","—"],["Unión cósmica","Proyectil que aturde","80–200","~11s"],["Santuario","Curación y velocidad","—","~16s"],["Viaje mágico","Portal entre muros","—","~19s"],["Destino templado","Detiene a todos","—","~95s"]],
+ [["Q + E","Q E",3]],["Reúne chimes en su camino.","Su portal cambia el rumbo del combate."]],
+["syndra","Syndra","La Soberana Oscura","Mago",3,4700,"Una maga poderosa y orgullosa cuyas esferas oscuras dominan el campo.","#A06BE0","🔮",3150,7800,
+ [["Trascendente","Gana poder al maximizar habilidades","—","—"],["Esfera oscura","Crea una esfera","70–210","~7s"],["Fuerza de voluntad","Mueve esferas","80–220","~13s"],["Esparcir débiles","Empuja y aturde","60–200","~18s"],["Poder desatado","Dispara esferas","90–250/esfera","~70s"]],
+ [["Q + E","Q E R",3]],["Sus esferas escalan su ultimate.","Su magia es de las más agresivas."]],
+["talon","Talon","La Sombra de la Daga","Asesino",2,4500,"Un sicario silencioso que usa las alturas y los muros a su favor.","#D9534F","🌘",1350,4800,
+ [["Fin de la hoja","Sangrado con tres ataques","—","—"],["Diplomacia noxiana","Golpe rápido","60–120","~8s"],["Rastrillo","Cuchillas en cono","50–110","~9s"],["Camino del asesino","Escala muros","—","~14s"],["Asalto sombrío","Invisible y ráfaga","90–270","~65s"]],
+ [["W + Q + R","W Q R",2]],["Ataca desde los muros.","Combina sangrado y daño directo."]],
+["caitlyn","Caitlyn","La Sheriff de Piltover","Tirador",2,4600,"Una agente de la ley de Piltover con puntería inigualable.","#5BA4E0","🎯",450,3150,
+ [["Disparo a la cabeza","Ataque potenciado periódico","—","—"],["Pacificador","Disparo de largo alcance","50–210","~10s"],["Trampa","Trampa que inmoviliza","—","~16s"],["Red calibre 90","Dispara y retrocede","70–250","~15s"],["As bajo la manga","Disparo certero","300–900","~90s"]],
+ [["W + E + Q","W E Q",2]],["Sus trampas bloquean avances.","Su ult tiene el mayor alcance."]]
+].map(a=>({id:a[0],name:a[1],title:a[2],role:a[3],diff:a[4],price:a[5],lore:a[6],color:a[7],glyph:a[8],ea:a[9],rp:a[10],skills:a[11],combos:a[12],facts:a[13],size:"18 cm",mat:"PVC / ABS (placeholder)",stock:Math.floor(Math.random()*8)+2}));
+const IMG={"zoe": "images/zoe-fondo.jpg", "heimerdinger": "images/heimerdinger-fondo.jpg", "sylas": "images/sylas-fondo.jpg", "katarina": "images/katarina-fondo.jpg", "anivia": "images/anivia-fondo.jpg", "qiyana": "images/qiyana-fondo.jpg", "talon": "images/talon-fondo.jpg", "bardo": "images/bardo-fondo.jpg", "syndra": "images/syndra-fondo.jpg", "caitlyn": "images/caitlyn-fondo.jpg"};const IMGC={"zoe": "images/zoe-3d.png", "heimerdinger": "images/heimerdinger-3d.png", "sylas": "images/sylas-3d.png", "katarina": "images/katarina-3d.png", "anivia": "images/anivia-3d.png", "qiyana": "images/qiyana-3d.png", "talon": "images/talon-3d.png", "bardo": "images/bardo-3d.png", "syndra": "images/syndra-3d.png", "caitlyn": "images/caitlyn-3d.png"};const POS={"zoe": 35, "heimerdinger": 50, "sylas": 18, "katarina": 28, "anivia": 50, "qiyana": 50, "talon": 30, "bardo": 50, "syndra": 40, "caitlyn": 22};const M={"qiyana": [["Mid", "JG"], "Maná"], "anivia": [["Mid"], "Maná"], "katarina": [["Mid"], "Sin maná"], "sylas": [["Mid", "JG"], "Maná"], "heimerdinger": [["Top", "Mid"], "Maná"], "zoe": [["Mid"], "Maná"], "bardo": [["Supp"], "Maná"], "syndra": [["Mid"], "Maná"], "talon": [["Mid", "JG"], "Maná"], "caitlyn": [["ADC"], "Maná"]};const ICO={"cart": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"20\" r=\"1.5\"/><circle cx=\"18\" cy=\"20\" r=\"1.5\"/><path d=\"M3 4h3l2.5 11h10l2-8H7\"/></svg>", "Instagram": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"currentColor\"/></svg>", "TikTok": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 3v11a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 3 2.5 4.5 5 4.7\"/></svg>", "YouTube": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"4\"/><path d=\"M10 9l5 3-5 3z\" fill=\"currentColor\"/></svg>", "Facebook": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z\"/></svg>", "X": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4l16 16M20 4L4 20\"/></svg>", "Discord": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7c3-1.5 7-1.5 10 0l2 9c-2 1.5-4 2-7 2s-5-.5-7-2z\"/><circle cx=\"9.5\" cy=\"12\" r=\"1.2\" fill=\"currentColor\"/><circle cx=\"14.5\" cy=\"12\" r=\"1.2\" fill=\"currentColor\"/></svg>", "whatsapp": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8z\"/><path d=\"M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-1-.5-2-1.5-2.5-2.5L11 9.5 10 7.5z\"/></svg>", "mail": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"3\"/><path d=\"M4 7l8 6 8-6\"/></svg>"};const CI=ICO.cart;
+const F={r:new Set(),d:new Set(),m:new Set()};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RES={"Maná":"mana","Energía":"energy","Sin maná":"none"};
+const BL=["58% 42% 47% 53%/46% 55% 45% 54%","44% 56% 61% 39%/55% 42% 58% 45%","52% 48% 40% 60%/41% 58% 42% 59%","63% 37% 54% 46%/45% 40% 60% 55%"];
+
+/* ===== IDIOMAS ===== */
+const L={
+es:{
+ n_home:"Inicio",n_champs:"Campeones",n_refs:"Referencias",n_book:"Reservas",n_loc:"Ubicación",n_contact:"Contacto",
+ ph_search:"Buscar…",a_search:"Buscar campeón",a_clear:"Borrar búsqueda",a_lang:"Idioma",a_cart:"Carrito",a_menu:"Menú",a_close:"Cerrar",
+ side:"NEXUS 1-COLECCIÓN",kicker:"COLECCIÓN HEXTECH",h1:"Figuras que <span>cobran vida</span>",
+ hero_p:"Coleccionables de tus campeones favoritos de League of Legends. Envíos a toda Colombia y Estados Unidos.",
+ b_view:"Ver colección",b_res:"Reservar",h_champs:"Campeones",filters:"Filtros",h_refs:"Referencias",h_book:"Reservas",h_social:"Redes",h_loc:"Ubicación",h_contact:"Contacto",
+ ph_name:"Tu nombre",ph_country:"País",ph_review:"Tu reseña",photo:"Foto (opcional, se sube al enviar al servidor)",send_review:"Enviar reseña",
+ ph_bname:"Nombre",ph_mail:"Correo",ph_wa:"WhatsApp (+57…)",ph_dep:"Abono opcional (COP)",confirm:"Confirmar reserva",
+ f_ship_l:"Envíos",f_ret_l:"Devoluciones",f_priv_l:"Privacidad",f_terms_l:"Términos",
+ f_ship:"Envíos: 3-7 días en Colombia, 7-15 a EE. UU. Edita esta política.",f_ret:"Devoluciones: 7 días con empaque original.",f_priv:"Privacidad: no almacenamos datos de tarjeta.",f_terms:"Términos: reservas sujetas a disponibilidad.",
+ legal:"Tienda de fans, no afiliada a Riot Games. League of Legends y sus personajes son propiedad de Riot Games, Inc.",built:"HECHO POR",studio:"TU ESTUDIO",
+ cart_title:"Tu carrito",go:"Ir a pagar",empty:"Vacío.",subtotal:"Subtotal",ship:"Envío (17%)",total:"Total",
+ ship_note:"El envío varía también según la ciudad a la que se envíe.",
+ chat_title:"Asistente",chat_ph:"Escribe…",c_hi:"¡Hola! ¿En qué te ayudo?",c_wa:"Te paso a WhatsApp…",c_def:"Gracias, un asesor te responderá. Toca “Asesor” para ir a WhatsApp.",
+ q_ship:"Envíos",q_pay:"Pagos",q_book:"Reservar",q_agent:"Asesor",
+ a_ship:"Enviamos a Colombia (3–7 días) y EE. UU. (7–15 días).",a_pay:"Aceptamos tarjetas, cripto y transferencias.",a_book:"Usa la sección Reservas y confirmamos por WhatsApp.",
+ hours:"Lun–Sáb 10:00–19:00",zones:"Colombia (3–7 días) · EE. UU. (7–15 días)",
+ add:"Agregar",view:"Ver",a_add:"Agregar {n} al carrito",none:"Sin resultados.",added:"<b>{n}</b> añadido al carrito",
+ filt_roles:"Roles",filt_diff:"Dificultad",filt_res:"Recurso",clear:"Limpiar",d1:"Baja",d2:"Media",d3:"Alta",r_mana:"Maná",r_energy:"Energía",r_none:"Sin maná",diff_l:"Dificultad {n} de 3",
+ tabs:["Historia","Habilidades","Combos","Curiosidades","Costos"],hold:"Mantén presionado para girar 360°",stock:"Stock",reserve:"Reservar",buy:"Comprar ahora",
+ dmg:"Daño base",cd:"Enfriamiento",scale:"Escalado con AP/AD · verificar con el parche vigente",keys:"Teclas",be:"Esencia Azul",verify:"(verificar con el parche vigente)",figure:"Figura",
+ pay:"Pagar",p_card:"Tarjeta",p_crypto:"Cripto",p_bank:"Transferencia",card_txt:"Visa, Mastercard y Amex (nacionales e internacionales).",pay_w:"Pagar con Wompi",pay_s:"Pagar con Stripe",
+ net:"Red",proof:"Enviar comprobante",proof_msg:"Hola, envío comprobante de pago por",card_warn:"Los datos de tarjeta nunca pasan por este sitio: se tokenizan en Wompi/Stripe.",
+ t_empty:"Carrito vacío",t_book:"¡Reserva confirmada! Abriendo WhatsApp…",t_thanks:"¡Gracias por tu reseña!",t_wompi:"Conecta Wompi Checkout con tu llave pública",t_stripe:"Conecta Stripe Checkout con tu llave pública",
+ bk_msg:"Reserva",bk_name:"Nombre",bk_mail:"Correo",bk_dep:"Abono",cur:"COP",meta:"Tienda de fans de figuras coleccionables de League of Legends. Envíos a Colombia y EE. UU."},
+en:{
+ n_home:"Home",n_champs:"Champions",n_refs:"Reviews",n_book:"Booking",n_loc:"Location",n_contact:"Contact",
+ ph_search:"Search…",a_search:"Search champion",a_clear:"Clear search",a_lang:"Language",a_cart:"Cart",a_menu:"Menu",a_close:"Close",
+ side:"NEXUS 1-COLLECTION",kicker:"HEXTECH COLLECTION",h1:"Figures that <span>come to life</span>",
+ hero_p:"Collectibles of your favorite League of Legends champions. Shipping across Colombia and the United States.",
+ b_view:"View collection",b_res:"Reserve",h_champs:"Champions",filters:"Filters",h_refs:"Reviews",h_book:"Booking",h_social:"Social",h_loc:"Location",h_contact:"Contact",
+ ph_name:"Your name",ph_country:"Country",ph_review:"Your review",photo:"Photo (optional, uploaded when sent to the server)",send_review:"Send review",
+ ph_bname:"Name",ph_mail:"Email",ph_wa:"WhatsApp (+57…)",ph_dep:"Optional deposit (USD)",confirm:"Confirm booking",
+ f_ship_l:"Shipping",f_ret_l:"Returns",f_priv_l:"Privacy",f_terms_l:"Terms",
+ f_ship:"Shipping: 3-7 days in Colombia, 7-15 to the USA. Edit this policy.",f_ret:"Returns: 7 days with original packaging.",f_priv:"Privacy: we do not store card data.",f_terms:"Terms: bookings subject to availability.",
+ legal:"Fan store, not affiliated with Riot Games. League of Legends and its characters are property of Riot Games, Inc.",built:"BUILT BY",studio:"YOUR STUDIO",
+ cart_title:"Your cart",go:"Checkout",empty:"Empty.",subtotal:"Subtotal",ship:"Shipping (17%)",total:"Total",
+ ship_note:"Shipping also varies depending on the destination city.",
+ chat_title:"Assistant",chat_ph:"Type…",c_hi:"Hi! How can I help you?",c_wa:"Taking you to WhatsApp…",c_def:"Thanks, an agent will reply to you. Tap “Agent” to go to WhatsApp.",
+ q_ship:"Shipping",q_pay:"Payments",q_book:"Booking",q_agent:"Agent",
+ a_ship:"We ship to Colombia (3–7 days) and the USA (7–15 days).",a_pay:"We accept cards, crypto and bank transfers.",a_book:"Use the Booking section and we will confirm via WhatsApp.",
+ hours:"Mon–Sat 10:00–19:00",zones:"Colombia (3–7 days) · USA (7–15 days)",
+ add:"Add",view:"View",a_add:"Add {n} to cart",none:"No results.",added:"<b>{n}</b> added to cart",
+ filt_roles:"Roles",filt_diff:"Difficulty",filt_res:"Resource",clear:"Clear",d1:"Low",d2:"Medium",d3:"High",r_mana:"Mana",r_energy:"Energy",r_none:"No mana",diff_l:"Difficulty {n} of 3",
+ tabs:["Story","Abilities","Combos","Trivia","Costs"],hold:"Press and hold to spin 360°",stock:"Stock",reserve:"Reserve",buy:"Buy now",
+ dmg:"Base damage",cd:"Cooldown",scale:"Scales with AP/AD · verify with the current patch",keys:"Keys",be:"Blue Essence",verify:"(verify with the current patch)",figure:"Figure",
+ pay:"Pay",p_card:"Card",p_crypto:"Crypto",p_bank:"Transfer",card_txt:"Visa, Mastercard and Amex (domestic and international).",pay_w:"Pay with Wompi",pay_s:"Pay with Stripe",
+ net:"Network",proof:"Send receipt",proof_msg:"Hi, I am sending my payment receipt for",card_warn:"Card data never goes through this site: it is tokenized by Wompi/Stripe.",
+ t_empty:"Cart is empty",t_book:"Booking confirmed! Opening WhatsApp…",t_thanks:"Thanks for your review!",t_wompi:"Connect Wompi Checkout with your public key",t_stripe:"Connect Stripe Checkout with your public key",
+ bk_msg:"Booking",bk_name:"Name",bk_mail:"Email",bk_dep:"Deposit",cur:"USD",meta:"Fan store of League of Legends collectible figures. Shipping to Colombia and the USA."}
+};
+let lang="es";try{lang=localStorage.getItem("lang")==="en"?"en":"es"}catch(e){}
+const t=(k,v)=>{let s=L[lang][k]??L.es[k]??k;if(v)for(const x in v)s=s.replace("{"+x+"}",v[x]);return s};
+/* campeones en inglés */
+const EN={
+qiyana:{t:"Empress of the Elements",l:"An ambitious heir to a jungle city who commands the elements to claim a throne she believes is hers.",sk:[["Royal Privilege","Her basic attack after using an ability is empowered"],["Edge of Ixtal","Throws a blade and gains an element when it touches terrain"],["Terraform","Dashes to a terrain piece or wall"],["Audacity","Leaps to the target and strikes"],["Supreme Display","Shockwave that stuns against walls"]],cb:["Q + E + R against a wall"],f:["Her city is inspired by Mesoamerican cultures from the game's universe.","Her strength depends on her surroundings."]},
+anivia:{t:"The Cryophoenix",l:"An eternal ice bird who is reborn to protect her frozen land.",sk:[["Rebirth","Revives as an egg"],["Flash Frost","Orb that pierces and explodes"],["Crystallize","Wall of ice"],["Frostbite","Double damage if the target is stunned"],["Glacial Storm","Persistent zone of snow"]],cb:["Wall + Q + E"],f:["She revives indefinitely if the egg survives.","Her wall blocks the enemy's path."]},
+katarina:{t:"The Sinister Blade",l:"A deadly agent who solves everything with daggers and speed.",sk:[["Voracity","Reduces cooldowns on takedowns"],["Bouncing Blade","Dagger that bounces and leaves another behind"],["Preparation","Throws a dagger into the air and gains speed"],["Shunpo","Blinks to a target or dagger"],["Death Lotus","Spins dealing continuous damage"]],cb:["Q + E + W + R"],f:["Her daggers are her signature.","Resets cooldowns on kills."]},
+sylas:{t:"The Unshackled",l:"A rebel mage who broke his chains and steals the power of others.",sk:[["Petricite Burst","His next attack is empowered"],["Chain Lash","Two strikes in an arc"],["Kingslayer","Lunges and strikes"],["Abscond","Dash and hook"],["Hijack","Steals the enemy ultimate"]],cb:["E + E2 + Q + W"],f:["His magic comes from stealing powers.","His combo mixes mobility and damage."]},
+heimerdinger:{t:"The Revered Inventor",l:"An elderly yordle genius who designs turrets and explosive devices.",sk:[["Hextech Affinity","Speed near his turrets"],["Turret","Places a turret"],["Micro-Rockets","Rockets that explode"],["Grenade","Stuns and damages"],["UPGRADE!!!","Empowers his next ability"]],cb:["R + E + W"],f:["Turrets are his main weapon.","He has a strong laboratory presence."]},
+zoe:{t:"The Aspect of Twilight",l:"A playful cosmic youth whose chaos can be deadly.",sk:[["More Sparkles!","Empowered attack after spells"],["Star","Projectile that grows"],["Spell Thief","Picks up a spell"],["Bubble","Puts the target to sleep"],["Portal Jump","Brief teleport"]],cb:["E + Q"],f:["Her greatest weapon is the bubble.","The bubble is hard to aim."]},
+bardo:{t:"The Wandering Caretaker",l:"A cosmic traveler who collects chimes and guides his allies.",sk:[["Traveler's Call","Collects chimes for power"],["Cosmic Binding","Projectile that stuns"],["Sanctuary","Healing and speed"],["Magical Journey","Portal between walls"],["Tempered Fate","Stops everyone"]],cb:["Q + E"],f:["Gathers chimes along his path.","His portal changes the course of combat."]},
+syndra:{t:"The Dark Sovereign",l:"A powerful and proud mage whose dark spheres dominate the field.",sk:[["Transcendent","Gains power by maxing abilities"],["Dark Sphere","Creates a sphere"],["Force of Will","Moves spheres"],["Scatter the Weak","Pushes and stuns"],["Unleashed Power","Fires spheres"]],cb:["Q + E"],f:["Her spheres scale her ultimate.","Her magic is among the most aggressive."]},
+talon:{t:"The Blade's Shadow",l:"A silent hitman who uses heights and walls to his advantage.",sk:[["Blade's End","Bleed with three attacks"],["Noxian Diplomacy","Quick strike"],["Rake","Cone of blades"],["Assassin's Path","Climbs walls"],["Shadow Assault","Invisible and burst"]],cb:["W + Q + R"],f:["Attacks from the walls.","Combines bleed and direct damage."]},
+caitlyn:{t:"The Sheriff of Piltover",l:"A Piltover law enforcement agent with unmatched aim.",sk:[["Headshot","Periodic empowered attack"],["Piltover Peacemaker","Long-range shot"],["Trap","Trap that immobilizes"],["90 Caliber Net","Fires and retreats"],["Ace in the Hole","Precise shot"]],cb:["W + E + Q"],f:["Her traps block advances.","Her ultimate has the longest range."]}};
+const ROLE_EN={Mago:"Mage",Asesino:"Assassin",Tirador:"Marksman"};
+const D=c=>{if(lang==="es")return{title:c.title,lore:c.lore,role:c.role,skills:c.skills,combos:c.combos,facts:c.facts};const e=EN[c.id];return{title:e.t,lore:e.l,role:ROLE_EN[c.role]||c.role,skills:c.skills.map((s,i)=>[e.sk[i][0],e.sk[i][1],s[2],s[3]]),combos:c.combos.map((x,i)=>[e.cb[i],x[1],x[2]]),facts:e.f}};
+/* Mago/Mage → celeste · Asesino/Assassin → rojo */
+const hl=s=>String(s).replace(/\b(mago|mage)\b/gi,'<span class="rm">$1</span>').replace(/\b(asesino|assassin)\b/gi,'<span class="ra">$1</span>');
+
+/* ===== utilidades ===== */
+let cart=[];try{cart=JSON.parse(localStorage.getItem("cart")||"[]")}catch(e){}
+const nf=new Intl.NumberFormat("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const money=p=>lang==="es"?"$"+Math.round(p).toLocaleString("es-CO")+" COP":"$"+nf.format(p/CFG.rate)+" USD";
+const toast=m=>{const x=$("#ts");x.textContent=m;x.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>x.classList.remove("on"),2200)};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dif=(n,c)=>`<span class="dif" role="img" aria-label="${t("diff_l",{n})}">${[1,2,3].map(i=>`<i class="${i<=n?"f":""}" style="${c?"--c:"+c:""}"></i>`).join("")}</span>`;
+const swap=el=>{el.classList.remove("swap");void el.offsetWidth;el.classList.add("swap")};
+/* imágenes: data-URI → blob (un solo decode por imagen) */
+const IU={...IMG};
+const IUC={...IMGC};
+const idx=id=>C.findIndex(c=>c.id===id);
+/* imagen plana con forma orgánica (tarjetas, carrito, buscador) */
+const fig=(c,cls="")=>{const i=idx(c.id);return`<div class="fig bl ${cls}" style="--c:${c.color};--rd:${BL[i%4]};--rd2:${BL[(i+1)%4]}"><img src="${IU[c.id]}" alt="${esc(c.name)}" width="1215" height="717" decoding="async" draggable="false" style="object-position:50% ${POS[c.id]}%"></div>`};
+/* figurina 3D con grosor y base */
+const NL=30;
+const fig3=(c,id="")=>`<div class="stage"${id?` id="${id}"`:""}><div class="f3f"><div class="f3" style="--c:${c.color};--img:url(${IU[c.id]});--pos:${POS[c.id]}%" role="img" aria-label="${esc(c.name)}">${Array.from({length:NL},(_,i)=>`<i class="ly" style="--i:${i}"></i>`).join("")}<i class="ly fr"></i><i class="ly bk"><b>${c.glyph}</b><small>NEXUS</small></i><div class="pd">${Array.from({length:16},(_,k)=>`<i style="--k:${k}"></i>`).join("")}<i class="gl"></i></div></div></div></div>`;
+
+const NC=14;
+const fig3c=c=>`<div class="stage cutst"><div class="f3f"><div class="f3 cut" style="--c:${c.color};--cut:url(${IUC[c.id]})" role="img" aria-label="${esc(c.name)}">${Array.from({length:NC},(_,i)=>`<i class="ly" style="--i:${i}"></i>`).join("")}<i class="ly fr"></i><i class="ly bk"></i><div class="pd"><i class="gl"></i></div></div></div></div>`;
+/* giro: mantener presionado. Izquierda → gira a la derecha · Derecha → gira a la izquierda */
+function spin(stage,getF,onHold){
+ let cur=0,hold=false,t0=0,raf=0,dir=1;
+ const put=v=>{cur=v;const f=getF();if(f)f.style.transform=`rotateX(-10deg) rotateY(${v}deg)`};
+ const tick=n=>{if(!hold)return;put(cur+dir*(n-t0)*.22);t0=n;raf=requestAnimationFrame(tick)};
+ const back=()=>{const from=((cur%360)+360)%360,to=from>180?360:0,t1=performance.now();
+  const st=n=>{const k=Math.min((n-t1)/700,1),e=1-Math.pow(1-k,3);put(from+(to-from)*e);if(k<1&&!hold)raf=requestAnimationFrame(st);else if(!hold){const f=getF();if(f)f.style.transform="";cur=0}};raf=requestAnimationFrame(st)};
+ stage.addEventListener("pointerdown",e=>{if(e.button>0||!e.target.closest(".stage"))return;const f=getF();if(!f)return;
+  const r=f.parentElement.getBoundingClientRect();dir=e.clientX<r.left+r.width/2?1:-1;
+  hold=true;cancelAnimationFrame(raf);t0=performance.now();try{stage.setPointerCapture(e.pointerId)}catch(_){}onHold&&onHold(true);raf=requestAnimationFrame(tick)});
+ const up=()=>{if(!hold)return;hold=false;cancelAnimationFrame(raf);onHold&&onHold(false);back()};
+ stage.addEventListener("pointerup",up);stage.addEventListener("pointercancel",up);stage.addEventListener("lostpointercapture",up);
+ stage.addEventListener("contextmenu",e=>e.preventDefault());
+}
+
+/* ===== hero ===== */
+$("#bn").textContent=CFG.name;
+$("#tk").innerHTML=C.map(c=>`<div class="sl" style="--c:${c.color}">${fig3c(c)}</div>`).join("");
+$("#dt").innerHTML=C.map((c,i)=>`<button aria-label="${c.name}" data-i="${i}"></button>`).join("");
+let si=0,tm;
+const go=i=>{si=(i+C.length)%C.length;$$(".dots button").forEach((b,j)=>b.classList.toggle("on",j===si));$$(".sl").forEach((s,j)=>{s.classList.toggle("on",j===si);const f=s.querySelector(".f3");if(f&&j!==si)f.style.transform=""});document.documentElement.style.setProperty("--ac",C[si].color)};
+$("#dt").onclick=e=>{if(e.target.dataset.i){go(+e.target.dataset.i);rs()}};
+const rs=()=>{clearInterval(tm);if(!matchMedia("(prefers-reduced-motion:reduce)").matches)tm=setInterval(()=>go(si+1),4200)};
+go(0);rs();
+spin($("#car"),()=>$(".sl.on .f3"),h=>h?clearInterval(tm):rs());
+$("#hx").innerHTML=Array.from({length:18},(_,i)=>`<b style="left:${(i*37)%100}%;animation-delay:${-i*.9}s;animation-duration:${7+i%5}s"></b>`).join("");
+
+/* ===== catálogo, buscador y filtros ===== */
+const roleD=c=>hl(D(c).role);
+const txt=c=>{const d=D(c);return(c.name+" "+d.title+" "+d.role).toLowerCase()};
+const lanesOk=c=>!F.r.size||M[c.id][0].some(l=>F.r.has(l));
+function cat(){const q=$("#q").value.trim().toLowerCase();
+ const list=C.filter(c=>(!q||txt(c).includes(q))&&lanesOk(c)&&(!F.d.size||F.d.has(String(c.diff)))&&(!F.m.size||F.m.has(RES[M[c.id][1]])));
+ $("#gr").innerHTML=list.map(c=>`<article class="card rv" style="--c:${c.color}"><div onclick="openC('${c.id}')" tabindex="0" onkeydown="if(event.key==='Enter')openC('${c.id}')">${fig(c)}</div><h3>${c.name}</h3><div class="meta"><span class="role">${roleD(c)}</span>${dif(c.diff,c.color)}</div><div class="pr">${money(c.price)}</div><div class="row"><button class="btn" onclick="add('${c.id}')" aria-label="${t("a_add",{n:c.name})}">${t("add")} ${CI}</button><button class="btn o" onclick="openC('${c.id}')">${t("view")}</button></div></article>`).join("")||`<p class="empty">${t("none")}</p>`;obs()}
+function sugg(){const q=$("#q").value.trim().toLowerCase(),b=$("#sg");$("#sx").classList.toggle("on",!!$("#q").value);
+ if(!q){b.classList.remove("on");b.innerHTML="";return}
+ const m=C.filter(c=>txt(c).includes(q)).slice(0,5);
+ b.innerHTML=m.length?m.map(c=>`<button class="si" data-id="${c.id}">${fig(c)}<span><b>${c.name}</b><small>${roleD(c)}</small></span></button>`).join(""):`<p class="si0">${t("none")}</p>`;b.classList.add("on")}
+$("#q").addEventListener("input",()=>{cat();sugg()});
+$("#q").addEventListener("focus",sugg);
+$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"){$("#sg").classList.remove("on");location.hash="campeones"}if(e.key==="Escape")$("#sg").classList.remove("on")});
+$("#sx").onclick=()=>{$("#q").value="";cat();sugg();$("#q").focus()};
+$("#sg").onclick=e=>{const b=e.target.closest(".si");if(b){$("#sg").classList.remove("on");openC(b.dataset.id)}};
+document.addEventListener("click",e=>{if(!e.target.closest(".sw"))$("#sg").classList.remove("on")});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+function obs(){$$(".rv:not(.in)").forEach(e=>io.observe(e))}
+/* filtros: selección múltiple */
+const G=()=>[["filt_roles","r",[["Top"],["JG"],["Mid"],["ADC"],["Supp"]]],["filt_diff","d",[[t("d1"),1],[t("d2"),2],[t("d3"),3]]],["filt_res","m",[[t("r_mana"),"mana"],[t("r_energy"),"energy"],[t("r_none"),"none"]]]];
+function buildF(){$("#fp").innerHTML=G().map(g=>`<div class="fg"><span class="fl2">${t(g[0])}</span><div class="ch">${g[2].map(o=>{const v=String(o[1]??o[0]);return`<button class="chip${g[1]==="m"?" rs-"+v:""}${F[g[1]].has(v)?" on":""}" data-g="${g[1]}" data-v="${v}">${hl(o[0])}</button>`}).join("")}</div></div>`).join("")+`<div class="fg"><button class="chip" id="fclr">${t("clear")}</button></div>`;cnt()}
+const cnt=()=>{const n=F.r.size+F.d.size+F.m.size;$("#fn").textContent=n?" ("+n+")":""};
+$("#fb").onclick=()=>{const o=$("#fp").classList.toggle("on");$("#fb").setAttribute("aria-expanded",o)};
+$("#fp").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;
+ if(b.id==="fclr"){F.r.clear();F.d.clear();F.m.clear();$$("#fp .chip[data-g]").forEach(x=>x.classList.remove("on"))}
+ else{const s=F[b.dataset.g],v=b.dataset.v;s.has(v)?s.delete(v):s.add(v);b.classList.toggle("on",s.has(v))}
+ cnt();cat()};
+
+/* ===== modal de campeón ===== */
+let curId=null,curTab=0;
+window.openC=(id,tab=0)=>{const c=C.find(x=>x.id===id),d=D(c);curId=id;curTab=tab;history.replaceState(null,"","#"+id);document.title=c.name+" · "+CFG.name;
+ $("#ld").textContent=JSON.stringify({"@context":"https://schema.org","@type":"Product",name:"Figura "+c.name,description:d.lore,offers:{"@type":"Offer",priceCurrency:lang==="es"?"COP":"USD",price:lang==="es"?c.price:+(c.price/CFG.rate).toFixed(2),availability:"https://schema.org/InStock"}});
+ const T=t("tabs"),K=["P","Q","W","E","R"];
+ $("#mc").innerHTML=`<div class="pg" style="--ac:${c.color}"><div>${fig3(c,"rt")}<p class="warn" style="text-align:center">${t("hold")}</p>
+ <p><b>${money(c.price)}</b> · ${t("stock")}: ${c.stock} · ${c.size} · ${c.mat}</p><div class="row"><button class="btn" onclick="add('${c.id}')" aria-label="${t("a_add",{n:c.name})}">${t("add")} ${CI}</button><button class="btn o" onclick="rsv('${c.id}')">${t("reserve")}</button><button class="btn t" onclick="add('${c.id}');checkout()">${t("buy")}</button></div></div>
+ <div><h2>${c.name}</h2><div class="meta"><span>${d.title}</span><span>${hl(d.role)}</span>${dif(c.diff,c.color)}</div><div class="tabs" role="tablist">${T.map((x,i)=>`<button role="tab" data-t="${i}" class="${i===tab?"on":""}">${x}</button>`).join("")}</div><div class="pnl" id="pn"></div></div></div>`;
+ const P=[()=>`<p>${hl(d.lore)}</p>`,
+  ()=>`<div class="tabs" id="sk">${K.map((k,i)=>`<button data-k="${i}" class="${i?"":"on"}">${k}</button>`).join("")}</div><div id="sd"></div>`,
+  ()=>d.combos.map(x=>`<p><b>${hl(x[0])}</b><br>${t("keys")}: <code>${x[1]}</code> · ${dif(x[2],c.color)}</p>`).join(""),
+  ()=>"<ul>"+d.facts.map(f=>`<li>${hl(f)}</li>`).join("")+"</ul>",
+  ()=>`<p>${t("be")}: <b>${c.ea}</b> · RP: <b>${c.rp}</b> <span class="warn">${t("verify")}</span></p><p>${t("figure")}: <b>${money(c.price)}</b></p>`];
+ const sd=(i,anim)=>{const s=d.skills[i];$("#sd").innerHTML=`<p><b>${hl(s[0])}</b><br>${hl(s[1])}</p><p>${t("dmg")}: ${s[2]} · ${t("cd")}: ${s[3]}<br><span class="warn">${t("scale")}</span></p>`;if(anim)swap($("#sd"))};
+ const show=(i,anim)=>{curTab=i;$("#pn").innerHTML=P[i]();if(i===1){sd(0);$("#sk").onclick=e=>{if(e.target.dataset.k!==undefined&&e.target.closest("button")){$$("#sk button").forEach(b=>b.classList.remove("on"));e.target.classList.add("on");sd(+e.target.dataset.k,true)}}}if(anim)swap($("#pn"))};
+ show(tab);
+ $(".tabs[role=tablist]").onclick=e=>{const b=e.target.closest("button[data-t]");if(b){$$("[role=tablist] button").forEach(x=>x.classList.remove("on"));b.classList.add("on");show(+b.dataset.t,true)}};
+ spin($("#rt"),()=>$("#rt .f3"));
+ $("#ovm").classList.add("on")};
+window.rsv=id=>{closeAll();$("#vc").value=id;location.hash="reservas"};
+
+/* ===== carrito ===== */
+const save=()=>{try{localStorage.setItem("cart",JSON.stringify(cart))}catch(e){}};
+const ping=id=>{const c=C.find(x=>x.id===id),n=$("#np"),i=idx(id);n.innerHTML=`<img src="${IU[id]}" alt="" style="--rd:${BL[i%4]};object-position:50% ${POS[id]}%"><span>${t("added",{n:c.name})}</span>`;n.classList.add("on");clearTimeout(ping.t);ping.t=setTimeout(()=>n.classList.remove("on"),2400);const b=$("#cc");b.classList.remove("bump");void b.offsetWidth;b.classList.add("bump")};
+window.add=id=>{const i=cart.find(x=>x.id===id);i?i.q++:cart.push({id,q:1});save();rc();ping(id)};
+window.chg=(id,d)=>{const i=cart.find(x=>x.id===id);i.q+=d;if(i.q<1)cart=cart.filter(x=>x!==i);save();rc()};
+/* envío = 17% del subtotal (calculado en COP, se muestra en la moneda del idioma) */
+const tot=()=>{const s=cart.reduce((a,i)=>a+C.find(c=>c.id===i.id).price*i.q,0),sh=s*CFG.shipPct;return[s,sh,s+sh]};
+function rc(){$("#cc").textContent=cart.reduce((a,i)=>a+i.q,0);
+ $("#ci").innerHTML=cart.map(i=>{const c=C.find(x=>x.id===i.id);return`<div class="it">${fig(c,"ci")}<div class="ir"><span class="in">${c.name}</span><b>${money(c.price*i.q)}</b><span class="q"><button onclick="chg('${c.id}',-1)" aria-label="−">−</button> ${i.q} <button onclick="chg('${c.id}',1)" aria-label="+">+</button></span></div></div>`}).join("")||`<p>${t("empty")}</p>`;
+ const[s,sh,tt]=tot();$("#ct").innerHTML=cart.length?`<div class="tt"><span>${t("subtotal")}</span><span>${money(s)}</span></div><div class="tt"><span>${t("ship")}</span><span>${money(sh)}</span></div><div class="tt big"><b>${t("total")}</b><b>${money(tt)}</b></div><p class="ship-note">${t("ship_note")}</p>`:""}
+
+/* ===== pago ===== */
+const bdg=n=>{const p=PAY[n];return`<span class="bdg" style="--bc:${p[0]};--tc:${p[1]}">${p[2]}</span>`};
+function checkout(keep){if(!cart.length)return toast(t("t_empty"));if(!keep)closeAll();const[,,tt]=tot();
+ $("#kc").innerHTML=`<h3 class="cz" style="color:var(--gold)">${t("pay")} · ${money(tt)}</h3><div class="tabs" id="pt"><button class="on" data-m="0">${t("p_card")}</button><button data-m="1">${t("p_crypto")}</button><button data-m="2">${t("p_bank")}</button></div><div id="pb"></div><p class="warn">${t("card_warn")}</p>`;
+ const M2=[()=>`<p>${t("card_txt")}</p><button class="btn" onclick="toast(t('t_wompi'))">${bdg("Wompi")}${t("pay_w")}</button> <button class="btn o" onclick="toast(t('t_stripe'))">${bdg("Stripe")}${t("pay_s")}</button>`,
+ ()=>`<select id="cs2">${Object.keys(CFG.crypto).map(k=>`<option>${k}</option>`).join("")}</select><div class="pm on" id="cx"></div>`,
+ ()=>Object.entries(CFG.bank).map(([k,v])=>`<div class="bk2" style="--bc:${PAY[k][0]}">${bdg(k)}<span><b>${k}</b>: ${v}</span></div>`).join("")+`<a class="btn t" target="_blank" rel="noopener" href="https://wa.me/${CFG.wa}?text=${encodeURIComponent(t("proof_msg")+" "+money(tt))}">${t("proof")}</a>`];
+ const sh=i=>{$("#pb").innerHTML=M2[i]();swap($("#pb"));if(i===1){const u=()=>{const k=$("#cs2").value,d=CFG.crypto[k];$("#cx").innerHTML=`<div class="bk2" style="--bc:${PAY[k][0]}">${bdg(k)}<b>${k}</b></div><span>${t("net")}: ${d[1]}</span><code>${d[0]}</code><img alt="QR ${k}" width="140" height="140" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${encodeURIComponent(d[0])}" loading="lazy">`};$("#cs2").onchange=u;u()}};
+ sh(0);$("#pt").onclick=e=>{if(e.target.dataset.m){$$("#pt button").forEach(b=>b.classList.remove("on"));e.target.classList.add("on");sh(+e.target.dataset.m)}};$("#ovk").classList.add("on")}
+$("#go").onclick=()=>checkout();
+
+/* ===== overlays ===== */
+function closeAll(){$$(".ov,.dr").forEach(e=>e.classList.remove("on"));history.replaceState(null,"","#");document.title="NEXUS FIGURAS";curId=null}
+$$("[data-close]").forEach(b=>b.onclick=closeAll);$$(".ov").forEach(o=>o.onclick=e=>{if(e.target===o)closeAll()});addEventListener("keydown",e=>{if(e.key==="Escape")closeAll()});
+$("#cb").onclick=()=>$("#dr").classList.add("on");$("#mb").onclick=()=>$("#nv").classList.toggle("on");$("#nv").onclick=()=>$("#nv").classList.remove("on");
+$$("footer a[data-pk]").forEach(a=>a.onclick=e=>{e.preventDefault();toast(t(a.dataset.pk))});
+
+/* ===== formularios ===== */
+$("#vc").innerHTML=C.map(c=>`<option value="${c.id}">${c.name}</option>`).join("");
+$("#vf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);if(f.get("website"))return;const c=C.find(x=>x.id===f.get("c"));
+ const m=`${t("bk_msg")}: ${f.get("q")}x ${c.name}\n${t("bk_name")}: ${f.get("n")}\n${t("bk_mail")}: ${f.get("e")}\nWhatsApp: ${f.get("w")}\n${t("bk_dep")}: ${f.get("a")||0} ${t("cur")}`;toast(t("t_book"));setTimeout(()=>open(`https://wa.me/${CFG.wa}?text=${encodeURIComponent(m)}`,"_blank","noopener"),900);e.target.reset()};
+const rv=[["Laura M.",["Colombia","Colombia"],5,["La figura llegó perfecta y muy bien empacada.","The figure arrived perfect and very well packed."]],["Mike R.",["EE. UU.","USA"],5,["Excelente calidad, envío rápido.","Excellent quality, fast shipping."]],["Sofía P.",["México","Mexico"],4,["Muy bonita, pagué con cripto sin problemas.","Very pretty, I paid with crypto without any issues."]]];
+const lx=v=>Array.isArray(v)?v[lang==="es"?0:1]:v;
+const rr=()=>$("#rw").innerHTML=rv.map(r=>`<div class="rv in"><b>${esc(r[0])}</b> · ${esc(lx(r[1]))}<br><span style="color:var(--gold)">${"★".repeat(r[2])}${"☆".repeat(5-r[2])}</span><p>${esc(lx(r[3]))}</p></div>`).join("");
+$("#rf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);if(f.get("website"))return;rv.unshift([f.get("n"),f.get("p"),+f.get("s"),f.get("t")]);rr();e.target.reset();toast(t("t_thanks"))};
+
+/* ===== redes (cada plataforma con su color), ubicación, contacto ===== */
+$("#sc").innerHTML=Object.entries(CFG.social).map(([k,v])=>`<a class="ic" href="${v}" target="_blank" rel="noopener" aria-label="${k}" title="${k}" style="--bc:${BRAND[k][0]};--bh:${BRAND[k][1]}">${ICO[k]}</a>`).join("");
+const loc=()=>$("#li").innerHTML=`<p>📍 ${CFG.addr}</p><p>🕒 ${t("hours")}</p><p>🚚 ${t("zones")}</p>`;
+$("#mp").src=`https://maps.google.com/maps?q=${CFG.lat},${CFG.lng}&z=15&output=embed`;
+$("#wa").href="https://wa.me/"+CFG.wa;$("#em").href="mailto:"+CFG.email;
+
+/* ===== chat ===== */
+let hist=[];try{hist=JSON.parse(localStorage.getItem("chat")||"[]")}catch(e){}
+const QR=()=>[[t("q_ship"),t("a_ship")],[t("q_pay"),t("a_pay")],[t("q_book"),t("a_book")],[t("q_agent"),"__wa"]];
+const msg=(m,u)=>{hist.push([m,u]);try{localStorage.setItem("chat",JSON.stringify(hist.slice(-40)))}catch(e){}$("#cm").insertAdjacentHTML("beforeend",`<p class="${u?"u":""}">${esc(m)}</p>`);$("#cm").scrollTop=1e9};
+const ask=m=>{msg(m,1);const r=QR().find(x=>x[0].toLowerCase()===m.toLowerCase()),a=r&&r[1];setTimeout(()=>a==="__wa"?(msg(t("c_wa")),open("https://wa.me/"+CFG.wa,"_blank","noopener")):msg(a||t("c_def")),400)};
+window.askq=i=>ask(QR()[i][0]);
+const renderQR=()=>{$("#qr").innerHTML=QR().map((x,i)=>`<button class="btn o" style="padding:4px 10px" onclick="askq(${i})">${x[0]}</button>`).join("")};
+$("#cf").onclick=()=>{const c=$("#ch");if(!c.dataset.i){c.dataset.i=1;renderQR();hist.length?hist.forEach(h=>{$("#cm").insertAdjacentHTML("beforeend",`<p class="${h[1]?"u":""}">${esc(h[0])}</p>`)}):msg(t("c_hi"));
+ if(CFG.tawk){const s=document.createElement("script");s.src=CFG.tawk;s.async=true;document.body.append(s)}}c.classList.toggle("on")};
+$("#cs").onclick=()=>{const v=$("#cin").value.trim();if(v){ask(v);$("#cin").value=""}};$("#cin").onkeydown=e=>{if(e.key==="Enter")$("#cs").click()};
+$("#cb").innerHTML=ICO.cart;$("#wa").innerHTML=ICO.whatsapp;$("#em").innerHTML=ICO.mail;
+
+/* ===== cambio de idioma ===== */
+function applyLang(){
+ document.documentElement.lang=lang;
+ $$("[data-l10n]").forEach(e=>{if(!e.classList.contains("lb"))e.innerHTML=t(e.dataset.l10n)});
+ $$("[data-ph]").forEach(e=>e.placeholder=t(e.dataset.ph));
+ $$("[data-al]").forEach(e=>e.setAttribute("aria-label",t(e.dataset.al)));
+ $$(".lb").forEach(b=>{const on=b.dataset.l===lang;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)});
+ document.querySelector('meta[name=description]').content=t("meta");
+ buildF();cat();sugg();rc();rr();loc();
+ if($("#ch").dataset.i)renderQR();
+ if($("#ovm").classList.contains("on")&&curId)openC(curId,curTab);
+ if($("#ovk").classList.contains("on"))checkout(true);
+}
+$$(".lb").forEach(b=>b.onclick=()=>{
+ b.classList.remove("pp");void b.offsetWidth;b.classList.add("pp");setTimeout(()=>b.classList.remove("pp"),700);
+ if(b.dataset.l===lang)return;
+ lang=b.dataset.l;try{localStorage.setItem("lang",lang)}catch(e){}
+ document.body.classList.remove("lt");void document.body.offsetWidth;document.body.classList.add("lt");setTimeout(()=>document.body.classList.remove("lt"),800);
+ applyLang()});
+applyLang();obs();if(location.hash&&C.find(c=>"#"+c.id===location.hash))openC(location.hash.slice(1));
+</script><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.143.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.143.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {GammaCorrectionShader} from 'three/addons/shaders/GammaCorrectionShader.js';
+import {CopyShader} from 'three/addons/shaders/CopyShader.js';
+const hexToVec3=h=>{const n=parseInt(h.slice(1),16);return new THREE.Vector3(((n>>16)&255)/255,((n>>8)&255)/255,(n&255)/255)};
+const CONFIG={drift:2.35,spin:0.03,scrollDrift:6,scrollSpin:0.1,parallax:0.6};
+const LAYERS={NONE:0,TORUS_SCENE:1,BLOOM_SCENE:2,ENTIRE_SCENE:3};
+const canvas=document.getElementById('scene');
+const renderer=new THREE.WebGL1Renderer({canvas,antialias:true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight,false);
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.VSMShadowMap;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x000000);scene.fog=new THREE.Fog(0x000000,0,15);
+const camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,0.1,80);camera.position.set(0,0,5);
+camera.layers.enable(LAYERS.TORUS_SCENE);camera.layers.enable(LAYERS.BLOOM_SCENE);camera.layers.enable(LAYERS.ENTIRE_SCENE);scene.add(camera);
+const FinalShader={uniforms:{iTime:{value:0},tDiffuse:{value:null},torusTexture:{value:null},bloomTexture:{value:null},haloTexture:{value:null},
+ uBg:{value:hexToVec3('#0a0a24')},uFlameA:{value:hexToVec3('#aee9ff')},uFlameB:{value:hexToVec3('#c79bff')},uFlameAmt:{value:0.2}},
+vertexShader:`varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position, 1.0); }`,
+fragmentShader:`uniform float iTime; uniform sampler2D tDiffuse; uniform sampler2D bloomTexture; uniform sampler2D torusTexture; uniform sampler2D haloTexture;
+uniform vec3 uBg; uniform vec3 uFlameA; uniform vec3 uFlameB; uniform float uFlameAmt;
+varying vec2 vUv;
+vec3 warp3d(vec3 pos, float t){ float curv=.8,a=1.9,b=0.7; pos*=2.;
+  pos.x+=curv*sin(t+a*pos.y)+t*b; pos.y+=curv*cos(t+a*pos.x);
+  pos.y+=curv*sin(t+a*pos.z)+t*b; pos.z+=curv*cos(t+a*pos.y);
+  pos.z+=curv*sin(t+a*pos.x)+t*b; pos.x+=curv*cos(t+a*pos.z);
+  return 0.5+0.5*cos(pos.xyz+vec3(1,2,4)); }
+void main(){
+  vec2 uv = 2.*vUv - 1.;
+  vec3 w = pow(warp3d(vec3(uv.x, sin(uv.y), uv.y), iTime*1.5), vec3(1.5));
+  vec3 flame = 1.5*uFlameA*w.x; flame*=w.y; flame += uFlameB*w.z;
+  flame *= smoothstep(0.25, 1., abs(uv.y));
+  float md = smoothstep(-0.7, 1., -uv.y*uv.x); flame *= md*md;
+  vec3 bg = uBg * (1.0 - 0.4 * length(uv));
+  vec3 halo = texture2D(haloTexture, vUv).xyz;
+  gl_FragColor = vec4(bg + flame*uFlameAmt + texture2D(bloomTexture, vUv).xyz + texture2D(torusTexture, vUv).xyz + texture2D(tDiffuse, vUv).xyz + halo, 1.);
+}`};
+const renderScene=new RenderPass(scene,camera);
+const V2=()=>new THREE.Vector2(innerWidth,innerHeight);
+const torusComposer=new EffectComposer(renderer);torusComposer.renderToScreen=false;
+torusComposer.addPass(renderScene);torusComposer.addPass(new ShaderPass(GammaCorrectionShader));torusComposer.addPass(new UnrealBloomPass(V2(),0.22,0.2,0));torusComposer.addPass(new ShaderPass(CopyShader));
+const bloomComposer=new EffectComposer(renderer);bloomComposer.renderToScreen=false;
+bloomComposer.addPass(renderScene);bloomComposer.addPass(new UnrealBloomPass(V2(),0.4,0.55,0));bloomComposer.addPass(new ShaderPass(GammaCorrectionShader));
+const finalComposer=new EffectComposer(renderer);finalComposer.addPass(renderScene);
+const finalPass=new ShaderPass(FinalShader);finalComposer.addPass(finalPass);
+const black=new THREE.DataTexture(new Uint8Array([0,0,0,255]),1,1);black.needsUpdate=true;
+finalPass.uniforms.bloomTexture.value=bloomComposer.renderTarget1.texture;
+finalPass.uniforms.torusTexture.value=torusComposer.renderTarget1.texture;
+finalPass.uniforms.haloTexture.value=black;
+const count=4200,depth=30;
+const positions=new Float32Array(count*3),palette=new Float32Array(count),bright=new Float32Array(count),scales=new Float32Array(count),phases=new Float32Array(count);
+for(let i=0;i<count;i++){const i3=i*3;
+ positions[i3]=(Math.random()-0.5)*24;positions[i3+1]=(Math.random()-0.5)*16;positions[i3+2]=(Math.random()-0.5)*30;
+ palette[i]=Math.floor(Math.random()*3);bright[i]=0.7+Math.random()*0.6;scales[i]=0.5+Math.pow(Math.random(),1.4)*2.5;phases[i]=Math.random()}
+const geo=new THREE.BufferGeometry();
+geo.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geo.setAttribute('aScale',new THREE.Float32BufferAttribute(scales,1));
+geo.setAttribute('aPhase',new THREE.Float32BufferAttribute(phases,1));geo.setAttribute('aPalette',new THREE.Float32BufferAttribute(palette,1));geo.setAttribute('aBright',new THREE.Float32BufferAttribute(bright,1));
+const mat=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+ uniforms:{uTime:{value:0},uSize:{value:50},uOpacity:{value:0},uDrift:{value:0},uDepth:{value:30},uTwinkle:{value:1},uCursor:{value:new THREE.Vector3()},uRepelRadius:{value:5},uRepelStrength:{value:0.35},uActivity:{value:0},
+ uColorA:{value:hexToVec3('#aef6cf')},uColorB:{value:hexToVec3('#5fe6a0')},uColorC:{value:hexToVec3('#eafff2')},uBrightness:{value:1.85}},
+vertexShader:`uniform float uTime; uniform float uSize; uniform float uDrift; uniform float uDepth; uniform float uTwinkle;
+uniform vec3 uCursor; uniform float uRepelRadius; uniform float uRepelStrength; uniform float uActivity;
+uniform vec3 uColorA; uniform vec3 uColorB; uniform vec3 uColorC;
+attribute float aScale; attribute float aPhase; attribute float aPalette; attribute float aBright;
+varying vec3 vColor; varying float vTwinkle;
+void main() {
+  vec3 pos = position;
+  pos.z = mod(pos.z + uDrift + (uDepth * 0.5), uDepth) - (uDepth * 0.5);
+  float tw = sin(uTime * 1.6 + aPhase * 6.2831);
+  vTwinkle = (1.0 - uTwinkle) + uTwinkle * (0.55 + 0.45 * tw);
+  vec4 modelPosition = modelMatrix * vec4(pos, 1.0);
+  vec3 toParticle = modelPosition.xyz - uCursor;
+  float dist = length(toParticle);
+  float falloff = smoothstep(uRepelRadius, 0.0, dist);
+  modelPosition.xyz += normalize(toParticle + vec3(0.0001)) * falloff * uRepelStrength * uActivity;
+  vec4 viewPosition = viewMatrix * modelPosition;
+  gl_Position = projectionMatrix * viewPosition;
+  gl_PointSize = uSize * aScale;
+  gl_PointSize *= (1.0 / -viewPosition.z);
+  vec3 base = aPalette < 0.5 ? uColorA : (aPalette < 1.5 ? uColorB : uColorC);
+  vColor = base * aBright;
+}`,
+fragmentShader:`uniform float uOpacity; uniform float uBrightness;
+varying vec3 vColor; varying float vTwinkle;
+void main() {
+  vec2 uv = gl_PointCoord - 0.5;
+  float d = length(uv);
+  if (d > 0.5) discard;
+  float strength = pow(1.0 - d * 2.0, 4.0);
+  vec3 color = mix(vec3(0.0), vColor, strength);
+  gl_FragColor = vec4(color * uBrightness, strength * uOpacity * vTwinkle);
+}`});
+const points=new THREE.Points(geo,mat);points.layers.enable(LAYERS.ENTIRE_SCENE);
+const group=new THREE.Group();group.add(points);scene.add(group);
+const POINTER={ndc:new THREE.Vector2(),world:new THREE.Vector3(),activity:0,active:false,lastMove:0};
+addEventListener('mousemove',e=>{POINTER.ndc.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight*2-1));POINTER.active=true;POINTER.lastMove=performance.now()});
+addEventListener('mouseout',()=>{POINTER.active=false});
+const lerp=(a,b,k)=>a+(b-a)*k,clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+function updatePointer(){let target=new THREE.Vector3(0,0,0);
+ if(POINTER.active){const v=new THREE.Vector3(POINTER.ndc.x,POINTER.ndc.y,0.5).unproject(camera);const dir=v.sub(camera.position).normalize();
+  if(Math.abs(dir.z)>1e-4){const t=-camera.position.z/dir.z;if(t>0&&isFinite(t))target=camera.position.clone().add(dir.multiplyScalar(t))}}
+ POINTER.world.lerp(target,0.12);
+ const idle=(performance.now()-POINTER.lastMove)/1000,want=(POINTER.active&&idle<3)?1:0;
+ POINTER.activity+=(want-POINTER.activity)*0.06;
+ mat.uniforms.uCursor.value.copy(POINTER.world);mat.uniforms.uActivity.value=POINTER.activity}
+let scrollTarget=0,scrollSmooth=0,scrollCurrent=0;const mouseNdc={x:0,y:0},mouseSmooth={x:0,y:0};
+const readScroll=()=>{const h=document.documentElement.scrollHeight-innerHeight;scrollTarget=h>0?clamp(scrollY/h,0,1):0};
+addEventListener('scroll',readScroll,{passive:true});readScroll();
+addEventListener('pointermove',e=>{mouseNdc.x=e.clientX/innerWidth*2-1;mouseNdc.y=-(e.clientY/innerHeight*2-1)},{passive:true});
+const appearStart=performance.now();let t0=performance.now()/1000;
+function frame(){requestAnimationFrame(frame);
+ const now=performance.now(),t=now/1000;finalPass.uniforms.iTime.value=t;
+ scrollSmooth=lerp(scrollSmooth,scrollTarget,0.10);scrollCurrent=lerp(scrollCurrent,scrollSmooth,0.06);
+ mouseSmooth.x=lerp(mouseSmooth.x,mouseNdc.x,0.06);mouseSmooth.y=lerp(mouseSmooth.y,mouseNdc.y,0.06);
+ updatePointer();
+ const scroll=scrollCurrent,m=mouseSmooth,dt=Math.min(0.05,t-t0);t0=t;
+ mat.uniforms.uTime.value=t;mat.uniforms.uDrift.value+=dt*(CONFIG.drift+scroll*CONFIG.scrollDrift);
+ camera.position.set(m.x*CONFIG.parallax,m.y*CONFIG.parallax,5-scroll*8);camera.lookAt(m.x*CONFIG.parallax,m.y*CONFIG.parallax,-10);
+ const fade=clamp((now-appearStart-300)/1400,0,1);mat.uniforms.uOpacity.value=fade*2;
+ group.rotation.z+=dt*(CONFIG.spin+scroll*CONFIG.scrollSpin);
+ camera.layers.set(LAYERS.TORUS_SCENE);torusComposer.render();
+ camera.layers.set(LAYERS.BLOOM_SCENE);bloomComposer.render();
+ camera.layers.set(LAYERS.ENTIRE_SCENE);finalComposer.render()}
+function resize(){renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight,false);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();
+ for(const c of [torusComposer,bloomComposer,finalComposer]){c.setPixelRatio(Math.min(devicePixelRatio,2));c.setSize(innerWidth,innerHeight)}readScroll()}
+addEventListener('resize',resize);resize();frame();
+</script>
+
+</body></html>
